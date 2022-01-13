@@ -1,4 +1,4 @@
-# Data Storytelling - Projektdokumentation
+# Projektdokumentation
 Sophia Engstler | Matr.Nr. 37161 | se089@hdm-stuttgart.de
 
 ## Zieldefinition
