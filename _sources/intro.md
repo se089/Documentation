@@ -1,16 +1,7 @@
-# Data Storytelling
-## Projektdokumentation
+# Data Storytelling - Projektdokumentation
+Sophia Engstler | Matr.Nr. 37161 | se089@hdm-stuttgart.de
 
-Gliederung:
-* Fragestellung
-  * Das Unternehmen
-  * Relevanz
-  * Datenlage
-* Aufbau der Story
-  * Allgemeine Potential aufzeigen --> über Zahlen bereits überzeugen
-  * Sprechen wir damit unsere Zielgruppe an?
-  * Bedürfnisse der Kunden für Wettbewerbsvorteil
-* Gestaltung der Diagramme
-  * Potential
-  * Kunde
-  * Wünsche
+## Zieldefinition
+Die Aufgabenstellung war es mithilfe von Daten Personen, von einem bestimmtem Thema zu überzeugen. Dafür sollte ein interaktives Dashboard und ein statischer PDF-Report erstellt werden. Des Weiteren sollten die verwendeten Daten als Excel vorliegen. Der Aufbau sollte einer definierten Story folgen und die Grafiken sollten sich an den besprochenen Gestaltprinzipien orientieren. 
+Ich habe mich mit dem Einfluss der Lebensmittelindustrie auf den Klimawandel beschäftigt. Ziel des Projekts ist es, Personen davon zu überzeugen, weniger Fleisch zu essen.
+In dieser Projektdokumentation werden alle Schritte des Projekts erläutert und das Design der Grafiken begründet.

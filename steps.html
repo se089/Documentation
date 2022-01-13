@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Storytelling - Projektdokumentation &#8212; Data Storytelling - Dokumentation</title>
+    <title>Vorgehen &#8212; Data Storytelling - Dokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Vorgehen" href="steps.html" />
+    <link rel="next" title="Aufbau des Projekts" href="story.html" />
+    <link rel="prev" title="Data Storytelling - Projektdokumentation" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -86,18 +87,18 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    Data Storytelling - Projektdokumentation
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="steps.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Vorgehen
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -156,7 +157,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/steps.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -176,7 +177,7 @@
                 data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
                     class="fab fa-github"></i>Repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsteps.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
         
@@ -203,9 +204,53 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#zieldefinition">
-   Zieldefinition
+  <a class="reference internal nav-link" href="#projektplanung">
+   Projektplanung
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#themenrecherche">
+   Themenrecherche
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definition-der-story">
+   Definition der Story
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sammeln-der-daten">
+     Sammeln der Daten
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vorbereitung-der-daten">
+     Vorbereitung der Daten
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#erstellung-der-projektergebnisse">
+   Erstellung der Projektergebnisse
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grafiken-und-dashboard">
+     Grafiken und Dashboard
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#report">
+     Report
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exceldaten">
+     Exceldaten
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -218,14 +263,42 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="data-storytelling-projektdokumentation">
-<h1>Data Storytelling - Projektdokumentation<a class="headerlink" href="#data-storytelling-projektdokumentation" title="Permalink to this headline">¶</a></h1>
-<p>Sophia Engstler | <a class="reference external" href="http://Matr.Nr">Matr.Nr</a>. 37161 | <a class="reference external" href="mailto:se089&#37;&#52;&#48;hdm-stuttgart&#46;de">se089<span>&#64;</span>hdm-stuttgart<span>&#46;</span>de</a></p>
-<div class="section" id="zieldefinition">
-<h2>Zieldefinition<a class="headerlink" href="#zieldefinition" title="Permalink to this headline">¶</a></h2>
-<p>Die Aufgabenstellung war es mithilfe von Daten Personen, von einem bestimmtem Thema zu überzeugen. Dafür sollte ein interaktives Dashboard und ein statischer PDF-Report erstellt werden. Des Weiteren sollten die verwendeten Daten als Excel vorliegen. Der Aufbau sollte einer definierten Story folgen und die Grafiken sollten sich an den besprochenen Gestaltprinzipien orientieren.
-Ich habe mich mit dem Einfluss der Lebensmittelindustrie auf den Klimawandel beschäftigt. Ziel des Projekts ist es, Personen davon zu überzeugen, weniger Fleisch zu essen.
-In dieser Projektdokumentation werden alle Schritte des Projekts erläutert und das Design der Grafiken begründet.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="vorgehen">
+<h1>Vorgehen<a class="headerlink" href="#vorgehen" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="projektplanung">
+<h2>Projektplanung<a class="headerlink" href="#projektplanung" title="Permalink to this headline">¶</a></h2>
+<p>Um eine Übersicht über die benötigten Schritte zu erhalten und diese parallel zu anderen Projekten zeitlich einzuordnen, erstellte ich zunächst eine Übersicht, welche Schritte bis zum Ziel des Projekts benötigt wurden. Dazu gehörte nach einer intensiven Auseinandersetzung mit dem Thema, die Definition des Ziels und die Entwicklung der Storyline. In diesem Zuge wollte ich mir überlegen, welche Daten ich benötige und wie ich diese visualisieren möchte. Anschließend plante ich die Grafiken zu erstellen und in Form eines interaktiven Dashboards und PDF-Report zu bringen. Abschließend wollte ich mich mit der Präsentation und dem Export der verwendeten Daten als Excel beschäftigen.</p>
+</div>
+<div class="section" id="themenrecherche">
+<h2>Themenrecherche<a class="headerlink" href="#themenrecherche" title="Permalink to this headline">¶</a></h2>
+<p>Um zunächst ein Thema für das Projekt zu finden, habe ich aktuelle Studien informiert. Dafür nutzte ich v.a. Websites oder Blogs wie Statista, Informationisbeautiful oder Ourworldindata. Da ich parallel auf der Suche nach einem Thema für meine Bachelor Thesis war, habe ich versucht, ein Thema zu finden, dass ich sowohl für das Projekt als auch für die Abschlussarbeit nutzen könnte. Aus persönlichem Interesse habe ich mich vermehrt mit den Bereichen E-Commerce, Umweltschutz und Ernährung auseinander gesetzt. Je mehr ich mich damit auseinandersetzte, merkte ich, dass sich diese Themen auch gut miteinander kombinieren ließen und habe einige Studien dazu gelesen. Daraus entwickelte sich zunächst die Idee, das Potenzial eines Online-Lebensmittelshop für eine Supermarktkette aufzuzeigen. Aufgrund der mangelnden Datenlage entschied ich mich dann jedoch dagegen und entdeckte mehrere Artikel von Hannah Mitchell, die sich intensiv mit dem Umwelteinfluss der Lebensmittelindustrie beschäftigt. Auf <a class="reference external" href="http://Ourworldindata.org">Ourworldindata.org</a> wurden die Daten der dort verwendeten Grafiken auch jeweils als Download zur Verfügung gestellt. Nach Sichten weiterer Quellen entschied ich mich deswegen für die Fragestellung, wieso wir weniger Fleisch essen sollten, um den Klimawandel zu bekämpfen.</p>
+</div>
+<div class="section" id="definition-der-story">
+<h2>Definition der Story<a class="headerlink" href="#definition-der-story" title="Permalink to this headline">¶</a></h2>
+<p>Für das Ergebnis der entwickelten Story siehe <a class="reference external" href="https://se089.github.io/Documentation/story.html">Aufbau der Story</a>.</p>
+<div class="section" id="sammeln-der-daten">
+<h3>Sammeln der Daten<a class="headerlink" href="#sammeln-der-daten" title="Permalink to this headline">¶</a></h3>
+<p>Wie bereits erwähnt wurden auf <a class="reference external" href="http://Ourworldindata.org">Ourworldindata.org</a> zahlreiche Datensätze als CSV-Download zum Thema angeboten. Des Weiteren bot die Seite bereits Inspiration, wie die Daten visualisiert werden könnten. Dies erleichterte die Suche nach Daten. In Ausnahmefällen (Abbildung 1.1 und 1.2) habe ich Informationen, die nicht als Datensatz angeboten wurden, aus Grafiken abgetippt, um diese in meinem Dashboard und Report zu verwenden.</p>
+</div>
+<div class="section" id="vorbereitung-der-daten">
+<h3>Vorbereitung der Daten<a class="headerlink" href="#vorbereitung-der-daten" title="Permalink to this headline">¶</a></h3>
+<p>Da jede Grafik ein anderes Themengebiet abdeckte, wurde für jede Grafik ein eigener Datensatz erstellt. Dafür mussten die ursprünglichen Datensätze teilweise zusammengefasstoder gefiltert werden. In diesem Schritt wurde auch eine explorative Datenanalyse durchgeführt, um die Daten zu validieren und Ausnahmefälle zu identifizieren. Zum Beispiel wurden in den Datensätzen für Abbildung 1.3 nicht nur alle Treibhausgasemissionen für alle Länder weltweit festgehalten, sondern es gab auch Zeilen, die die Werte für die gesamte Welt, alle Industriestaaten oder alle Entwicklungsländer zusammenfassten. Diese mussten ausgeschlossen werden, da diese zu falschen Min- und Max-Werten in der Farbskala geführt hätten.</p>
+</div>
+</div>
+<div class="section" id="erstellung-der-projektergebnisse">
+<h2>Erstellung der Projektergebnisse<a class="headerlink" href="#erstellung-der-projektergebnisse" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="grafiken-und-dashboard">
+<h3>Grafiken und Dashboard<a class="headerlink" href="#grafiken-und-dashboard" title="Permalink to this headline">¶</a></h3>
+<p>Ich entschied mich dazu, die Grafiken und das Dashboard parallel zu erstellen, um die Grafiken gleich mit Animation und Interaktivität testen zu können. Beim Aufbau orientierte ich mich an der Storyline. Als Hilfestellung nutzte ich hauptsächlich die ausführliche Dokumentation von Plotly und Dash. Nachdem das grobe Gerüst des Dashboards und die Basis für jede Abbildung stand, optimierte ich die Gestaltung der Grafiken entsprechend der Designprinzipien.</p>
+</div>
+<div class="section" id="report">
+<h3>Report<a class="headerlink" href="#report" title="Permalink to this headline">¶</a></h3>
+<p>Nachdem alle Grafiken erstellt und bereits gestaltet waren, begann ich mit der Erstellung des Reports. Dafür erstellte ich zunächst ein grobes HTML-Template und formulierte Texte zur Erklärung der Grafiken. Interaktive Grafiken (1.3, 2.1 und 3.1) habe ich entsprechend gefiltert und Hovertexte in Annotationen umgewandelt. Alle Plots wurden als statisches Bild gespeichert. Die Texte wurden über das HTML-Template gerendert und somit eine HTML-Seite erstellt. Abschließend wurde dieser Report in eine PDF konvertiert.</p>
+</div>
+<div class="section" id="exceldaten">
+<h3>Exceldaten<a class="headerlink" href="#exceldaten" title="Permalink to this headline">¶</a></h3>
+<p>Für die Exceldaten wurden alle vorbereiteten Datensätze in ein Python Notebook geladen und mittels XLSRwriter eine Excel erstellt, in der jeder Datensatz einen eigenen Reiter erhielt. Zudem habe ich einige Formatierungen (z.B. Titel, Spaltenbreite, Zahlenformatierung) vorgenommen, um die Daten besser lesbar zu machen.</p>
+</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -260,11 +333,20 @@ In dieser Projektdokumentation werden alle Schritte des Projekts erläutert und 
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="intro.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Data Storytelling - Projektdokumentation</p>
+            </div>
+        </a>
+    </div>
      <div id="next">
-        <a class="right-next" href="steps.html" title="next page">
+        <a class="right-next" href="story.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Vorgehen</p>
+                <p class="prevnext-title">Aufbau des Projekts</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
