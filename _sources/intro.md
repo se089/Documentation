@@ -1,16 +1,16 @@
-# Welcome to your Jupyter Book
+# Data Storytelling
+## Projektdokumentation
 
-This is a small sample book to give you a feel for how book content is
-structured.
-
-:::{note}
-Here is a note!
-:::
-
-And here is a code block:
-
-```
-e = mc^2
-```
-
-Check out the content pages bundled with this sample book to see more.
+Gliederung:
+* Fragestellung
+  * Das Unternehmen
+  * Relevanz
+  * Datenlage
+* Aufbau der Story
+  * Allgemeine Potential aufzeigen --> über Zahlen bereits überzeugen
+  * Sprechen wir damit unsere Zielgruppe an?
+  * Bedürfnisse der Kunden für Wettbewerbsvorteil
+* Gestaltung der Diagramme
+  * Potential
+  * Kunde
+  * Wünsche
