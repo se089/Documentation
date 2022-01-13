@@ -1,0 +1,4287 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fig 3: World-map and line-graph – Total GHG-Emissions by country &#8212; Data Storytelling - Dokumentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preparation" href="report_pdf.html" />
+    <link rel="prev" title="Vorgehen" href="steps.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Storytelling - Dokumentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Dieses Buch durchsuchen ..." aria-label="Dieses Buch durchsuchen ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Projektdokumentation
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Vorgehen
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="steps.html">
+   Projektplanung
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Fig 3: World-map and line-graph – Total GHG-Emissions by country
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="report_pdf.html">
+   Preparation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_excel.html">
+   Styling
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Aufbau der Story
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="story.html">
+   Story
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Gestaltung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design.html">
+   Design
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navigation umschalten" aria-controls="site-navigation"
+                title="Navigation umschalten" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/data_preparation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdata_preparation.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/data_preparation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Starten Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Fig 3: World-map and line-graph – Total GHG-Emissions by country
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#merge-with-total-ghg-sum">
+     Merge with total ghg sum
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#translate-country-names">
+     Translate Country names
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#correct-missing-values-in-translated-column-names">
+       Correct missing values in translated column names
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#export-to-csv">
+     Export to csv
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fig-4-environmental-impact-of-single-foods-scatterplot">
+   Fig 4: Environmental impact of single foods - Scatterplot
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#merge-datasets">
+     Merge Datasets
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#drop-and-rename-columns">
+     Drop and rename columns
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-missing-values">
+     Check missing values
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-new-columns">
+     Create new columns
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#category-of-food">
+       Category of food
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#testing-how-to-create-automated-list-for-checkboxes">
+     Testing how to create automated list for checkboxes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Export to csv
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
+   Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-preparation">
+     Data preparation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filter-data">
+     Filter Data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bring-data-into-necessary-form">
+     Bring data into necessary form
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#translate-countries-to-german">
+     Translate countries to german
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Export to csv
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">,</span> <span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_65539</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ni">run_line_magic</span><span class="nt">(self, magic_name, line, _stack_depth)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2349</span>                 <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;local_ns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_local_scope</span><span class="p">(</span><span class="n">stack_depth</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2350</span>             <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">builtin_trap</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">2351</span>                 <span class="n">result</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2352</span>             <span class="k">return</span> <span class="n">result</span>
+<span class="g g-Whitespace">   </span><span class="mi">2353</span> 
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/decorator.py</span> in <span class="ni">fun</span><span class="nt">(*args, **kw)</span>
+<span class="g g-Whitespace">    </span><span class="mi">230</span>             <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">231</span>                 <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">232</span>             <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">233</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
+<span class="g g-Whitespace">    </span><span class="mi">234</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__doc__</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/magic.py</span> in <span class="ni">&lt;lambda&gt;</span><span class="nt">(f, *a, **k)</span>
+<span class="g g-Whitespace">    </span><span class="mi">185</span>     <span class="c1"># but it&#39;s overkill for just that one bit of state.</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">def</span> <span class="nf">magic_deco</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">187</span>         <span class="n">call</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">f</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">188</span> 
+<span class="g g-Whitespace">    </span><span class="mi">189</span>         <span class="k">if</span> <span class="n">callable</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/magics/pylab.py</span> in <span class="ni">matplotlib</span><span class="nt">(self, line)</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Available matplotlib backends: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">backends_list</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>         <span class="k">else</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">99</span>             <span class="n">gui</span><span class="p">,</span> <span class="n">backend</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shell</span><span class="o">.</span><span class="n">enable_matplotlib</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_show_matplotlib_backend</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="p">,</span> <span class="n">backend</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span> 
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/interactiveshell.py</span> in <span class="ni">enable_matplotlib</span><span class="nt">(self, gui)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3518</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">3519</span><span class="s2">         from IPython.core import pylabtools as pt</span>
+<span class="ne">-&gt; </span><span class="mi">3520</span><span class="s2">         from matplotlib_inline.backend_inline import configure_inline_support</span>
+<span class="g g-Whitespace">   </span><span class="mi">3521</span><span class="s2">         gui, backend = pt.find_gui_and_backend(gui, self.pylab_gui_select)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3522</span><span class="s2"> </span>
+
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib_inline/backend_inline.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> # Distributed under the terms of the BSD 3-Clause License.</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> </span>
+<span class="ne">----&gt; </span><span class="mi">6</span><span class="s2"> import matplotlib</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> from matplotlib.backends.backend_agg import (  # noqa</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2">     new_figure_manager,</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
+<h1>Fig 3: World-map and line-graph – Total GHG-Emissions by country<a class="headerlink" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import multiple dataframes: total and relative ghg-emissions of the food industry and ghg emissions in total (all industries/households)</span>
+<span class="n">df_world_food_total</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/b_Weltkarte_emissions-from-food.csv&#39;</span><span class="p">)</span>
+<span class="n">df_world_food_share</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/a_Weltkarte_share-global-food-emissions.csv&#39;</span><span class="p">)</span>
+<span class="n">df_world_total</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/total-ghg-emissions.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the dataframes include data from 1990 until 2015 for each country</span>
+<span class="n">df_world_total</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entity</th>
+      <th>Code</th>
+      <th>Year</th>
+      <th>Total GHG emissions including LUCF (CAIT)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>15140000.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1991</td>
+      <td>15060000.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1992</td>
+      <td>13600000.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1993</td>
+      <td>13430000.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1994</td>
+      <td>13240000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># additionally the dataframes contain entities like World, Industrialized or developing countries. These information will be used for the indicator and the linegraph</span>
+<span class="n">df_world_food_total</span><span class="p">[</span><span class="n">df_world_food_total</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;World&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entity</th>
+      <th>Code</th>
+      <th>Year</th>
+      <th>Food emissions by country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5720</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1990</td>
+      <td>1.618756e+10</td>
+    </tr>
+    <tr>
+      <th>5721</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1991</td>
+      <td>1.622370e+10</td>
+    </tr>
+    <tr>
+      <th>5722</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1992</td>
+      <td>1.624452e+10</td>
+    </tr>
+    <tr>
+      <th>5723</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1993</td>
+      <td>1.624781e+10</td>
+    </tr>
+    <tr>
+      <th>5724</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1994</td>
+      <td>1.637945e+10</td>
+    </tr>
+    <tr>
+      <th>5725</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1995</td>
+      <td>1.666085e+10</td>
+    </tr>
+    <tr>
+      <th>5726</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1996</td>
+      <td>1.618239e+10</td>
+    </tr>
+    <tr>
+      <th>5727</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1997</td>
+      <td>1.719740e+10</td>
+    </tr>
+    <tr>
+      <th>5728</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1998</td>
+      <td>1.664329e+10</td>
+    </tr>
+    <tr>
+      <th>5729</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>1999</td>
+      <td>1.638430e+10</td>
+    </tr>
+    <tr>
+      <th>5730</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2000</td>
+      <td>1.622597e+10</td>
+    </tr>
+    <tr>
+      <th>5731</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2001</td>
+      <td>1.584010e+10</td>
+    </tr>
+    <tr>
+      <th>5732</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2002</td>
+      <td>1.689851e+10</td>
+    </tr>
+    <tr>
+      <th>5733</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2003</td>
+      <td>1.680979e+10</td>
+    </tr>
+    <tr>
+      <th>5734</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2004</td>
+      <td>1.752575e+10</td>
+    </tr>
+    <tr>
+      <th>5735</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2005</td>
+      <td>1.753204e+10</td>
+    </tr>
+    <tr>
+      <th>5736</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2006</td>
+      <td>1.758787e+10</td>
+    </tr>
+    <tr>
+      <th>5737</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2007</td>
+      <td>1.733504e+10</td>
+    </tr>
+    <tr>
+      <th>5738</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2008</td>
+      <td>1.741150e+10</td>
+    </tr>
+    <tr>
+      <th>5739</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2009</td>
+      <td>1.771382e+10</td>
+    </tr>
+    <tr>
+      <th>5740</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2010</td>
+      <td>1.755956e+10</td>
+    </tr>
+    <tr>
+      <th>5741</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2011</td>
+      <td>1.709468e+10</td>
+    </tr>
+    <tr>
+      <th>5742</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2012</td>
+      <td>1.721370e+10</td>
+    </tr>
+    <tr>
+      <th>5743</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2013</td>
+      <td>1.724884e+10</td>
+    </tr>
+    <tr>
+      <th>5744</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2014</td>
+      <td>1.754278e+10</td>
+    </tr>
+    <tr>
+      <th>5745</th>
+      <td>World</td>
+      <td>OWID_WRL</td>
+      <td>2015</td>
+      <td>1.791235e+10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set_index to merge datasets into one</span>
+<span class="n">df_world_food_total</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Code&#39;</span><span class="p">],</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">df_world_food_share</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Code&#39;</span><span class="p">],</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">df_world_total</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Code&#39;</span><span class="p">],</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Merge dataframes for food industry on index</span>
+<span class="n">df_world_food</span> <span class="o">=</span> <span class="n">df_world_food_total</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_world_food_share</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Rename columns</span>
+<span class="n">df_world_food</span> <span class="o">=</span> <span class="n">df_world_food</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Food emissions by country&#39;</span><span class="p">:</span> <span class="s1">&#39;total_food_emissions&#39;</span><span class="p">,</span> <span class="s1">&#39;Share of global food emissions&#39;</span><span class="p">:</span> <span class="s1">&#39;share_food_emissions&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Share of emissions in percent for easier formatting</span>
+<span class="n">df_world_food</span><span class="p">[</span><span class="s1">&#39;share_food_emissions&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_world_food</span><span class="p">[</span><span class="s1">&#39;share_food_emissions&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="merge-with-total-ghg-sum">
+<h2>Merge with total ghg sum<a class="headerlink" href="#merge-with-total-ghg-sum" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#merge food industry dataframe with total ghg-emissions for each country</span>
+<span class="n">df_world</span> <span class="o">=</span> <span class="n">df_world_food</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_world_total</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_world</span> <span class="o">=</span> <span class="n">df_world</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Total GHG emissions including LUCF (CAIT)&#39;</span><span class="p">:</span> <span class="s1">&#39;total_ghg&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_world</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+    </tr>
+    <tr>
+      <th>Entity</th>
+      <th>Year</th>
+      <th>Code</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="5" valign="top">Afghanistan</th>
+      <th>1990</th>
+      <th>AFG</th>
+      <td>10442724.8</td>
+      <td>0.000645</td>
+      <td>15140000.0</td>
+    </tr>
+    <tr>
+      <th>1991</th>
+      <th>AFG</th>
+      <td>10665824.8</td>
+      <td>0.000657</td>
+      <td>15060000.0</td>
+    </tr>
+    <tr>
+      <th>1992</th>
+      <th>AFG</th>
+      <td>10805724.8</td>
+      <td>0.000665</td>
+      <td>13600000.0</td>
+    </tr>
+    <tr>
+      <th>1993</th>
+      <th>AFG</th>
+      <td>11003824.8</td>
+      <td>0.000677</td>
+      <td>13430000.0</td>
+    </tr>
+    <tr>
+      <th>1994</th>
+      <th>AFG</th>
+      <td>11286224.8</td>
+      <td>0.000689</td>
+      <td>13240000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_world</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;total_ghg&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+    </tr>
+    <tr>
+      <th>Entity</th>
+      <th>Year</th>
+      <th>Code</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="5" valign="top">World</th>
+      <th>2015</th>
+      <th>OWID_WRL</th>
+      <td>1.791235e+10</td>
+      <td>NaN</td>
+      <td>4.985498e+10</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <th>OWID_WRL</th>
+      <td>1.754278e+10</td>
+      <td>NaN</td>
+      <td>4.944079e+10</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <th>OWID_WRL</th>
+      <td>1.724884e+10</td>
+      <td>NaN</td>
+      <td>4.896160e+10</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <th>OWID_WRL</th>
+      <td>1.721370e+10</td>
+      <td>NaN</td>
+      <td>4.834877e+10</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <th>OWID_WRL</th>
+      <td>1.709468e+10</td>
+      <td>NaN</td>
+      <td>4.780254e+10</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">Western Sahara</th>
+      <th>2011</th>
+      <th>ESH</th>
+      <td>6.409090e+05</td>
+      <td>0.000037</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <th>ESH</th>
+      <td>6.421380e+05</td>
+      <td>0.000037</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <th>ESH</th>
+      <td>6.366470e+05</td>
+      <td>0.000037</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <th>ESH</th>
+      <td>6.322050e+05</td>
+      <td>0.000036</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2015</th>
+      <th>ESH</th>
+      <td>6.323650e+05</td>
+      <td>0.000035</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5876 rows × 3 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Reset year and code as column</span>
+<span class="n">df_world</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_world</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Code</th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+    </tr>
+    <tr>
+      <th>Entity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Afghanistan</th>
+      <td>1990</td>
+      <td>AFG</td>
+      <td>10442724.8</td>
+      <td>0.000645</td>
+      <td>15140000.0</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>1991</td>
+      <td>AFG</td>
+      <td>10665824.8</td>
+      <td>0.000657</td>
+      <td>15060000.0</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>1992</td>
+      <td>AFG</td>
+      <td>10805724.8</td>
+      <td>0.000665</td>
+      <td>13600000.0</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>1993</td>
+      <td>AFG</td>
+      <td>11003824.8</td>
+      <td>0.000677</td>
+      <td>13430000.0</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>1994</td>
+      <td>AFG</td>
+      <td>11286224.8</td>
+      <td>0.000689</td>
+      <td>13240000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="translate-country-names">
+<h2>Translate Country names<a class="headerlink" href="#translate-country-names" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read translation list of countries</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/countries.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="n">countries</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>code</th>
+      <th>en</th>
+      <th>de</th>
+      <th>es</th>
+      <th>fr</th>
+      <th>it</th>
+      <th>ru</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AD</td>
+      <td>Andorra</td>
+      <td>Andorra</td>
+      <td>Andorra</td>
+      <td>ANDORRE</td>
+      <td>Andorra</td>
+      <td>Андорра</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AE</td>
+      <td>United Arab Emirates</td>
+      <td>Vereinigte Arabische Emirate</td>
+      <td>Emiratos Árabes Unidos</td>
+      <td>ÉMIRATS ARABES UNIS</td>
+      <td>Emirati Arabi Uniti</td>
+      <td>ОАЭ</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AF</td>
+      <td>Afghanistan</td>
+      <td>Afghanistan</td>
+      <td>Afganistán</td>
+      <td>AFGHANISTAN</td>
+      <td>Afghanistan</td>
+      <td>Афганистан</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AG</td>
+      <td>Antigua and Barbuda</td>
+      <td>Antigua und Barbuda</td>
+      <td>Antigua y Barbuda</td>
+      <td>ANTIGUA-ET-BARBUDA</td>
+      <td>Antigua e Barbuda</td>
+      <td>Антигуа и Барбуда</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AI</td>
+      <td>Anguilla</td>
+      <td>Anguilla</td>
+      <td>Anguila</td>
+      <td>ANGUILLA</td>
+      <td>Anguilla</td>
+      <td>Ангилья</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop unnecessary columns</span>
+<span class="n">countries</span><span class="o">=</span><span class="n">countries</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;fr&#39;</span><span class="p">,</span> <span class="s1">&#39;it&#39;</span><span class="p">,</span> <span class="s1">&#39;ru&#39;</span><span class="p">,</span> <span class="s1">&#39;es&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">countries</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">countries</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>de</th>
+    </tr>
+    <tr>
+      <th>en</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Andorra</th>
+      <td>Andorra</td>
+    </tr>
+    <tr>
+      <th>United Arab Emirates</th>
+      <td>Vereinigte Arabische Emirate</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Afghanistan</td>
+    </tr>
+    <tr>
+      <th>Antigua and Barbuda</th>
+      <td>Antigua und Barbuda</td>
+    </tr>
+    <tr>
+      <th>Anguilla</th>
+      <td>Anguilla</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#merge columns</span>
+<span class="n">df_world_de</span><span class="o">=</span><span class="n">df_world</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">countries</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_world_de</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Year                       0
+Code                     208
+total_food_emissions      52
+share_food_emissions      26
+total_ghg               1017
+de                       390
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># missing values Code are from rows which are no country or </span>
+<span class="n">df_world_de</span><span class="p">[</span><span class="n">df_world_de</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Developing&#39;, &#39;Faroe Islands&#39;, &#39;Industrialized&#39;,
+       &#39;International aviation&#39;, &#39;International shipping&#39;, &#39;Micronesia&#39;,
+       &#39;Swaziland&#39;, &#39;Timor-Leste&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop columns with missing code, which are not needed in our plots</span>
+<span class="n">df_world_de</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Faroe Islands&#39;</span><span class="p">,</span> <span class="s1">&#39;International aviation&#39;</span><span class="p">,</span> <span class="s1">&#39;International shipping&#39;</span><span class="p">,</span> <span class="s1">&#39;Micronesia&#39;</span><span class="p">,</span> <span class="s1">&#39;Swaziland&#39;</span><span class="p">,</span> <span class="s1">&#39;Timor-Leste&#39;</span><span class="p">]</span> <span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="correct-missing-values-in-translated-column-names">
+<h3>Correct missing values in translated column names<a class="headerlink" href="#correct-missing-values-in-translated-column-names" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#create list of countries with missing values</span>
+<span class="n">lst</span><span class="o">=</span><span class="n">df_world_de</span><span class="p">[</span><span class="n">df_world_de</span><span class="p">[</span><span class="s1">&#39;de&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="n">lst</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Congo&#39;, &#39;Cote d&#39;Ivoire&#39;, &#39;Czechia&#39;, &#39;Democratic Republic of Congo&#39;,
+       &#39;Developing&#39;, &#39;Hong Kong&#39;, &#39;Industrialized&#39;, &#39;Macao&#39;, &#39;North Macedonia&#39;,
+       &#39;Serbia and Montenegro&#39;, &#39;United States Virgin Islands&#39;, &#39;World&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#fill exceptions</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+    <span class="n">df_world_de</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">x</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Quality Check</span>
+<span class="n">df_world_de</span><span class="p">[</span><span class="n">df_world_de</span><span class="p">[</span><span class="s1">&#39;de&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Developing&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Code</th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+      <th>de</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Developing</th>
+      <td>1990</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.685514</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1991</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.676649</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1992</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.667533</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1993</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.653868</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1994</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.643171</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1995</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.631656</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1996</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.614389</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1997</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.631600</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1998</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.618919</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1999</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.613981</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.594816</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2001</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.545506</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2002</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.554128</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2003</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.526474</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2004</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.519872</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2005</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.498886</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2006</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.478809</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2007</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.454045</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2008</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.446139</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2009</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.447450</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2010</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.423308</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2011</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.402077</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2012</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.395109</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2013</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.388114</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2014</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.386813</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2015</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.392964</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check missing values in Code</span>
+<span class="n">df_world_de</span><span class="p">[</span><span class="n">df_world_de</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Developing&#39;, &#39;Industrialized&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#data exploration</span>
+<span class="n">df_world_de</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;share_food_emissions&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Code</th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+      <th>de</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Developing</th>
+      <td>1990</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.685514</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1991</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.676649</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1992</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.667533</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1993</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.653868</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1994</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.643171</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1995</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.631656</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1997</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.631600</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1998</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.618919</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1996</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.614389</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>1999</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.613981</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.594816</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2002</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.554128</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2001</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.545506</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2003</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.526474</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2004</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.519872</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2005</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.498886</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2006</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.478809</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2007</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.454045</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2009</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.447450</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+    <tr>
+      <th>Developing</th>
+      <td>2008</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.446139</td>
+      <td>NaN</td>
+      <td>Developing</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_world_de</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;World&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Code</th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+      <th>de</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>World</th>
+      <td>1990</td>
+      <td>OWID_WRL</td>
+      <td>1.618756e+10</td>
+      <td>NaN</td>
+      <td>3.496734e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1991</td>
+      <td>OWID_WRL</td>
+      <td>1.622370e+10</td>
+      <td>NaN</td>
+      <td>3.512544e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1992</td>
+      <td>OWID_WRL</td>
+      <td>1.624452e+10</td>
+      <td>NaN</td>
+      <td>3.498553e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1993</td>
+      <td>OWID_WRL</td>
+      <td>1.624781e+10</td>
+      <td>NaN</td>
+      <td>3.507963e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1994</td>
+      <td>OWID_WRL</td>
+      <td>1.637945e+10</td>
+      <td>NaN</td>
+      <td>3.528761e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1995</td>
+      <td>OWID_WRL</td>
+      <td>1.666085e+10</td>
+      <td>NaN</td>
+      <td>3.601263e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1996</td>
+      <td>OWID_WRL</td>
+      <td>1.618239e+10</td>
+      <td>NaN</td>
+      <td>3.602505e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1997</td>
+      <td>OWID_WRL</td>
+      <td>1.719740e+10</td>
+      <td>NaN</td>
+      <td>3.734250e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1998</td>
+      <td>OWID_WRL</td>
+      <td>1.664329e+10</td>
+      <td>NaN</td>
+      <td>3.697663e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>1999</td>
+      <td>OWID_WRL</td>
+      <td>1.638430e+10</td>
+      <td>NaN</td>
+      <td>3.681009e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2000</td>
+      <td>OWID_WRL</td>
+      <td>1.622597e+10</td>
+      <td>NaN</td>
+      <td>3.742092e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2001</td>
+      <td>OWID_WRL</td>
+      <td>1.584010e+10</td>
+      <td>NaN</td>
+      <td>3.837996e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2002</td>
+      <td>OWID_WRL</td>
+      <td>1.689851e+10</td>
+      <td>NaN</td>
+      <td>3.982470e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2003</td>
+      <td>OWID_WRL</td>
+      <td>1.680979e+10</td>
+      <td>NaN</td>
+      <td>4.067867e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2004</td>
+      <td>OWID_WRL</td>
+      <td>1.752575e+10</td>
+      <td>NaN</td>
+      <td>4.245222e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2005</td>
+      <td>OWID_WRL</td>
+      <td>1.753204e+10</td>
+      <td>NaN</td>
+      <td>4.335452e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2006</td>
+      <td>OWID_WRL</td>
+      <td>1.758787e+10</td>
+      <td>NaN</td>
+      <td>4.372350e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2007</td>
+      <td>OWID_WRL</td>
+      <td>1.733504e+10</td>
+      <td>NaN</td>
+      <td>4.458443e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2008</td>
+      <td>OWID_WRL</td>
+      <td>1.741150e+10</td>
+      <td>NaN</td>
+      <td>4.495227e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2009</td>
+      <td>OWID_WRL</td>
+      <td>1.771382e+10</td>
+      <td>NaN</td>
+      <td>4.493619e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2010</td>
+      <td>OWID_WRL</td>
+      <td>1.755956e+10</td>
+      <td>NaN</td>
+      <td>4.655237e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2011</td>
+      <td>OWID_WRL</td>
+      <td>1.709468e+10</td>
+      <td>NaN</td>
+      <td>4.780254e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2012</td>
+      <td>OWID_WRL</td>
+      <td>1.721370e+10</td>
+      <td>NaN</td>
+      <td>4.834877e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2013</td>
+      <td>OWID_WRL</td>
+      <td>1.724884e+10</td>
+      <td>NaN</td>
+      <td>4.896160e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2014</td>
+      <td>OWID_WRL</td>
+      <td>1.754278e+10</td>
+      <td>NaN</td>
+      <td>4.944079e+10</td>
+      <td>World</td>
+    </tr>
+    <tr>
+      <th>World</th>
+      <td>2015</td>
+      <td>OWID_WRL</td>
+      <td>1.791235e+10</td>
+      <td>NaN</td>
+      <td>4.985498e+10</td>
+      <td>World</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop index</span>
+<span class="n">df_world_de</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">#rename translated country names column</span>
+<span class="n">df_world_de</span><span class="o">=</span><span class="n">df_world_de</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;de&#39;</span><span class="p">:</span><span class="s1">&#39;Entity&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_world_de</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Code</th>
+      <th>total_food_emissions</th>
+      <th>share_food_emissions</th>
+      <th>total_ghg</th>
+      <th>Entity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1990</td>
+      <td>AFG</td>
+      <td>10442724.8</td>
+      <td>0.000645</td>
+      <td>15140000.0</td>
+      <td>Afghanistan</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1991</td>
+      <td>AFG</td>
+      <td>10665824.8</td>
+      <td>0.000657</td>
+      <td>15060000.0</td>
+      <td>Afghanistan</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1992</td>
+      <td>AFG</td>
+      <td>10805724.8</td>
+      <td>0.000665</td>
+      <td>13600000.0</td>
+      <td>Afghanistan</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1993</td>
+      <td>AFG</td>
+      <td>11003824.8</td>
+      <td>0.000677</td>
+      <td>13430000.0</td>
+      <td>Afghanistan</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1994</td>
+      <td>AFG</td>
+      <td>11286224.8</td>
+      <td>0.000689</td>
+      <td>13240000.0</td>
+      <td>Afghanistan</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="export-to-csv">
+<h2>Export to csv<a class="headerlink" href="#export-to-csv" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Data for Worldmap</span>
+<span class="n">df_world_de</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;fig3_global_ghg_emissions.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="fig-4-environmental-impact-of-single-foods-scatterplot">
+<h1>Fig 4: Environmental impact of single foods - Scatterplot<a class="headerlink" href="#fig-4-environmental-impact-of-single-foods-scatterplot" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the datasets for environmental impact of different products</span>
+<span class="n">df_ghg</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/ghg-kcal-poore.csv&#39;</span><span class="p">)</span>
+<span class="n">df_freshwater</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/freshwater-kcal-poore.csv&#39;</span><span class="p">)</span>
+<span class="n">df_land</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/land-use-kcal-poore.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="merge-datasets">
+<h2>Merge Datasets<a class="headerlink" href="#merge-datasets" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set_index to merge datasets into one</span>
+<span class="n">df_ghg</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">df_freshwater</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">df_land</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Merge first two datasets</span>
+<span class="n">df_merge1</span> <span class="o">=</span> <span class="n">df_ghg</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_freshwater</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Merge with third dataset</span>
+<span class="n">df_merge2</span><span class="o">=</span><span class="n">df_merge1</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_land</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_merge2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code_x</th>
+      <th>Year_x</th>
+      <th>GHG emissions per 1000kcal (Poore &amp; Nemecek, 2018)</th>
+      <th>Code_y</th>
+      <th>Year_y</th>
+      <th>Freshwater withdrawals per 1000kcal (Poore &amp; Nemecek, 2018)</th>
+      <th>Code</th>
+      <th>Year</th>
+      <th>Land use per 1000kcal (Poore &amp; Nemecek, 2018)</th>
+    </tr>
+    <tr>
+      <th>Entity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Apples</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.895833</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>375.208333</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.312500</td>
+    </tr>
+    <tr>
+      <th>Bananas</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.433333</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>190.833333</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>3.216667</td>
+    </tr>
+    <tr>
+      <th>Barley</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.236000</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>3.420000</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.222000</td>
+    </tr>
+    <tr>
+      <th>Beef (beef herd)</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>36.439560</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>531.575092</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>119.490842</td>
+    </tr>
+    <tr>
+      <th>Beef (dairy herd)</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>12.197802</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>994.249084</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>15.838828</td>
+    </tr>
+    <tr>
+      <th>Beet Sugar</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.515670</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>62.022792</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.521368</td>
+    </tr>
+    <tr>
+      <th>Berries &amp; Grapes</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.684211</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>736.140351</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>4.228070</td>
+    </tr>
+    <tr>
+      <th>Brassicas</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>3.000000</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>702.352941</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>3.235294</td>
+    </tr>
+    <tr>
+      <th>Cane Sugar</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.911681</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>176.666667</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.581197</td>
+    </tr>
+    <tr>
+      <th>Cassava</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.355236</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.858316</td>
+    </tr>
+    <tr>
+      <th>Cheese</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>6.170543</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>1448.372093</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>22.684755</td>
+    </tr>
+    <tr>
+      <th>Citrus Fruit</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.218750</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>258.437500</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.687500</td>
+    </tr>
+    <tr>
+      <th>Coffee</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>50.946429</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>46.250000</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>38.607143</td>
+    </tr>
+    <tr>
+      <th>Dark Chocolate</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>9.023211</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>104.564797</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>13.338491</td>
+    </tr>
+    <tr>
+      <th>Eggs</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>3.243056</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>401.180556</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>4.354167</td>
+    </tr>
+    <tr>
+      <th>Fish (farmed)</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>7.614525</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>2062.178771</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>4.698324</td>
+    </tr>
+    <tr>
+      <th>Groundnuts</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.556897</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>319.362069</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.570690</td>
+    </tr>
+    <tr>
+      <th>Lamb &amp; Mutton</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>12.529968</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>568.706625</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>116.659306</td>
+    </tr>
+    <tr>
+      <th>Maize</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.375898</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>47.694859</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.650083</td>
+    </tr>
+    <tr>
+      <th>Milk</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>5.250000</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>1047.000000</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>14.916667</td>
+    </tr>
+    <tr>
+      <th>Nuts</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.069919</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>672.162602</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.107317</td>
+    </tr>
+    <tr>
+      <th>Oatmeal</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.945482</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>183.911552</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.897446</td>
+    </tr>
+    <tr>
+      <th>Olive Oil</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.613122</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>242.285068</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.976244</td>
+    </tr>
+    <tr>
+      <th>Onions &amp; Leeks</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.351351</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>38.648649</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.054054</td>
+    </tr>
+    <tr>
+      <th>Other Pulses</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.524927</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>4.565982</td>
+    </tr>
+    <tr>
+      <th>Palm Oil</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.828054</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>0.723982</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.273756</td>
+    </tr>
+    <tr>
+      <th>Peas</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.283237</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.156069</td>
+    </tr>
+    <tr>
+      <th>Pig Meat</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>5.150628</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>751.380753</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>7.263598</td>
+    </tr>
+    <tr>
+      <th>Potatoes</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.628415</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>80.737705</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.202186</td>
+    </tr>
+    <tr>
+      <th>Poultry Meat</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>5.335135</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>356.756757</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>6.605405</td>
+    </tr>
+    <tr>
+      <th>Prawns (farmed)</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>26.087379</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>3413.009709</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>2.883495</td>
+    </tr>
+    <tr>
+      <th>Rapeseed Oil</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.426471</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>26.889140</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.202489</td>
+    </tr>
+    <tr>
+      <th>Rice</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.207271</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>609.983722</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.759631</td>
+    </tr>
+    <tr>
+      <th>Root Vegetables</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.162162</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>76.756757</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.891892</td>
+    </tr>
+    <tr>
+      <th>Sunflower Oil</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.407240</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>114.015837</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.997738</td>
+    </tr>
+    <tr>
+      <th>Tofu (soybeans)</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.166052</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>54.833948</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.298893</td>
+    </tr>
+    <tr>
+      <th>Tomatoes</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>11.000000</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>1946.315789</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>4.210526</td>
+    </tr>
+    <tr>
+      <th>Wheat &amp; Rye</th>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>0.586843</td>
+      <td>NaN</td>
+      <td>2010.0</td>
+      <td>242.026217</td>
+      <td>NaN</td>
+      <td>2010</td>
+      <td>1.439075</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="drop-and-rename-columns">
+<h2>Drop and rename columns<a class="headerlink" href="#drop-and-rename-columns" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop duplicate columns</span>
+<span class="n">df_impact</span> <span class="o">=</span> <span class="n">df_merge2</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Code_x&#39;</span><span class="p">,</span> <span class="s1">&#39;Code_y&#39;</span><span class="p">,</span> <span class="s1">&#39;Year_x&#39;</span><span class="p">,</span> <span class="s1">&#39;Year_y&#39;</span><span class="p">,</span> <span class="s1">&#39;Code&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#rename columns</span>
+<span class="n">df_impact</span><span class="o">=</span><span class="n">df_impact</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;GHG emissions per 1000kcal (Poore &amp; Nemecek, 2018)&quot;</span><span class="p">:</span> <span class="s2">&quot;ghg&quot;</span><span class="p">,</span> <span class="s2">&quot;Freshwater withdrawals per 1000kcal (Poore &amp; Nemecek, 2018)&quot;</span><span class="p">:</span> <span class="s2">&quot;freshwater&quot;</span><span class="p">,</span> <span class="s2">&quot;Land use per 1000kcal (Poore &amp; Nemecek, 2018)&quot;</span><span class="p">:</span><span class="s2">&quot;land&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_impact</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ghg</th>
+      <th>freshwater</th>
+      <th>land</th>
+    </tr>
+    <tr>
+      <th>Entity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Apples</th>
+      <td>0.895833</td>
+      <td>375.208333</td>
+      <td>1.312500</td>
+    </tr>
+    <tr>
+      <th>Bananas</th>
+      <td>1.433333</td>
+      <td>190.833333</td>
+      <td>3.216667</td>
+    </tr>
+    <tr>
+      <th>Barley</th>
+      <td>0.236000</td>
+      <td>3.420000</td>
+      <td>0.222000</td>
+    </tr>
+    <tr>
+      <th>Beef (beef herd)</th>
+      <td>36.439560</td>
+      <td>531.575092</td>
+      <td>119.490842</td>
+    </tr>
+    <tr>
+      <th>Beef (dairy herd)</th>
+      <td>12.197802</td>
+      <td>994.249084</td>
+      <td>15.838828</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_impact</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 38 entries, Apples to Wheat &amp; Rye
+Data columns (total 3 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   ghg         38 non-null     float64
+ 1   freshwater  35 non-null     float64
+ 2   land        38 non-null     float64
+dtypes: float64(3)
+memory usage: 2.2+ KB
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="check-missing-values">
+<h2>Check missing values<a class="headerlink" href="#check-missing-values" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_impact</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ghg           0
+freshwater    3
+land          0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="create-new-columns">
+<h2>Create new columns<a class="headerlink" href="#create-new-columns" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="category-of-food">
+<h3>Category of food<a class="headerlink" href="#category-of-food" title="Permalink to this headline">¶</a></h3>
+<p>In order to better compare the different food groups, 7 more labels are added according to the nutrition pyramide: drinks, plant products, cereal, Dairy products and eggs, meat, oil and fats, sweets. This assignment has to be done manually as the range of products is very wide.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drinks</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Coffee&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Getränke&quot;</span>
+<span class="c1"># plant products</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Apples&#39;</span><span class="p">,</span> <span class="s1">&#39;Bananas&#39;</span><span class="p">,</span> <span class="s1">&#39;Brassicas&#39;</span><span class="p">,</span> <span class="s1">&#39;Cassava&#39;</span><span class="p">,</span> <span class="s1">&#39;Berries &amp; Grapes&#39;</span><span class="p">,</span> <span class="s1">&#39;Citrus Fruit&#39;</span><span class="p">,</span> <span class="s1">&#39;Onions &amp; Leeks&#39;</span><span class="p">,</span> <span class="s1">&#39;Potatoes&#39;</span><span class="p">,</span><span class="s1">&#39;Peas&#39;</span><span class="p">,</span> <span class="s1">&#39;Tomatoes&#39;</span><span class="p">,</span> <span class="s1">&#39;Root Vegetables&#39;</span><span class="p">,</span> <span class="s1">&#39;Tofu (soybeans)&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Pflanzliche Produkte&quot;</span>
+<span class="c1">#cereal</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Barley&#39;</span><span class="p">,</span> <span class="s1">&#39;Maize&#39;</span><span class="p">,</span> <span class="s1">&#39;Other Pulses&#39;</span><span class="p">,</span> <span class="s1">&#39;Oatmeal&#39;</span><span class="p">,</span> <span class="s1">&#39;Rice&#39;</span><span class="p">,</span> <span class="s1">&#39;Wheat &amp; Rye&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Getreide&quot;</span>
+<span class="c1">#Dairy Products and eggs</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Eggs&#39;</span><span class="p">,</span> <span class="s1">&#39;Milk&#39;</span><span class="p">,</span> <span class="s1">&#39;Cheese&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span>
+<span class="c1">#meat</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Beef (beef herd)&#39;</span><span class="p">,</span> <span class="s1">&#39;Beef (dairy herd)&#39;</span><span class="p">,</span> <span class="s1">&#39;Fish (farmed)&#39;</span><span class="p">,</span> <span class="s1">&#39;Lamb &amp; Mutton&#39;</span><span class="p">,</span> <span class="s1">&#39;Pig Meat&#39;</span><span class="p">,</span> <span class="s1">&#39;Poultry Meat&#39;</span><span class="p">,</span><span class="s1">&#39;Prawns (farmed)&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Fleisch &amp; Fisch&quot;</span>
+<span class="c1">#oil and fats</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Groundnuts&#39;</span><span class="p">,</span> <span class="s1">&#39;Nuts&#39;</span><span class="p">,</span> <span class="s1">&#39;Palm Oil&#39;</span><span class="p">,</span> <span class="s1">&#39;Olive Oil&#39;</span><span class="p">,</span><span class="s1">&#39;Rapeseed Oil&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunflower Oil&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Öle &amp; Fette&quot;</span>
+<span class="c1">#sweets</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Dark Chocolate&#39;</span><span class="p">,</span> <span class="s1">&#39;Cane Sugar&#39;</span><span class="p">,</span> <span class="s1">&#39;Beet Sugar&#39;</span><span class="p">],</span> <span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Süßes&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_impact</span><span class="o">.</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Apfel&#39;</span><span class="p">,</span> <span class="s1">&#39;Banane&#39;</span><span class="p">,</span> <span class="s1">&#39;Gerste&#39;</span><span class="p">,</span> <span class="s1">&#39;Rindfleisch (Fleischzucht)&#39;</span><span class="p">,</span> <span class="s1">&#39;Rindfleisch (Milchvieh)&#39;</span><span class="p">,</span> <span class="s1">&#39;Zuckerrüben&#39;</span><span class="p">,</span> <span class="s1">&#39;Beeren&#39;</span><span class="p">,</span> <span class="s1">&#39;Kohl&#39;</span><span class="p">,</span> <span class="s1">&#39;Rohrzucker&#39;</span><span class="p">,</span> <span class="s1">&#39;Maniok&#39;</span><span class="p">,</span> <span class="s1">&#39;Käse&#39;</span><span class="p">,</span> <span class="s1">&#39;Zitrone&#39;</span><span class="p">,</span> <span class="s1">&#39;Kaffee&#39;</span><span class="p">,</span> <span class="s1">&#39;Dunkle Schokolade&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Eier&#39;</span><span class="p">,</span> <span class="s1">&#39;Fisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Erdnüsse&#39;</span><span class="p">,</span> <span class="s1">&#39;Lammfleisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Mais&#39;</span><span class="p">,</span> <span class="s1">&#39;Milch&#39;</span><span class="p">,</span> <span class="s1">&#39;Nüsse&#39;</span><span class="p">,</span> <span class="s1">&#39;Haferflocken&#39;</span><span class="p">,</span> <span class="s1">&#39;Olivenöl&#39;</span><span class="p">,</span> <span class="s1">&#39;Zwiebeln&#39;</span><span class="p">,</span> <span class="s1">&#39;Hülsenfrüchte&#39;</span><span class="p">,</span> <span class="s1">&#39;Palmöl&#39;</span><span class="p">,</span> <span class="s1">&#39;Erbsen&#39;</span><span class="p">,</span> <span class="s1">&#39;Schweinefleisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Kartoffeln&#39;</span><span class="p">,</span> <span class="s1">&#39;Hühnerfleisch&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Garnele&#39;</span><span class="p">,</span> <span class="s1">&#39;Rapsöl&#39;</span><span class="p">,</span> <span class="s1">&#39;Reis&#39;</span><span class="p">,</span> <span class="s1">&#39;Wurzelgemüse&#39;</span><span class="p">,</span> <span class="s1">&#39;Sonnenblumenöl&#39;</span><span class="p">,</span> <span class="s1">&#39;Tofu&#39;</span><span class="p">,</span> <span class="s1">&#39;Tomate&#39;</span><span class="p">,</span> <span class="s1">&#39;Weizen&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_impact</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ghg</th>
+      <th>freshwater</th>
+      <th>land</th>
+      <th>category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Apfel</th>
+      <td>0.895833</td>
+      <td>375.208333</td>
+      <td>1.312500</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Banane</th>
+      <td>1.433333</td>
+      <td>190.833333</td>
+      <td>3.216667</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Gerste</th>
+      <td>0.236000</td>
+      <td>3.420000</td>
+      <td>0.222000</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Rindfleisch (Fleischzucht)</th>
+      <td>36.439560</td>
+      <td>531.575092</td>
+      <td>119.490842</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Rindfleisch (Milchvieh)</th>
+      <td>12.197802</td>
+      <td>994.249084</td>
+      <td>15.838828</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Zuckerrüben</th>
+      <td>0.515670</td>
+      <td>62.022792</td>
+      <td>0.521368</td>
+      <td>Süßes</td>
+    </tr>
+    <tr>
+      <th>Beeren</th>
+      <td>2.684211</td>
+      <td>736.140351</td>
+      <td>4.228070</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Kohl</th>
+      <td>3.000000</td>
+      <td>702.352941</td>
+      <td>3.235294</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Rohrzucker</th>
+      <td>0.911681</td>
+      <td>176.666667</td>
+      <td>0.581197</td>
+      <td>Süßes</td>
+    </tr>
+    <tr>
+      <th>Maniok</th>
+      <td>1.355236</td>
+      <td>NaN</td>
+      <td>1.858316</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Käse</th>
+      <td>6.170543</td>
+      <td>1448.372093</td>
+      <td>22.684755</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Zitrone</th>
+      <td>1.218750</td>
+      <td>258.437500</td>
+      <td>2.687500</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Kaffee</th>
+      <td>50.946429</td>
+      <td>46.250000</td>
+      <td>38.607143</td>
+      <td>Getränke</td>
+    </tr>
+    <tr>
+      <th>Dunkle Schokolade</th>
+      <td>9.023211</td>
+      <td>104.564797</td>
+      <td>13.338491</td>
+      <td>Süßes</td>
+    </tr>
+    <tr>
+      <th>Eier</th>
+      <td>3.243056</td>
+      <td>401.180556</td>
+      <td>4.354167</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Fisch</th>
+      <td>7.614525</td>
+      <td>2062.178771</td>
+      <td>4.698324</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Erdnüsse</th>
+      <td>0.556897</td>
+      <td>319.362069</td>
+      <td>1.570690</td>
+      <td>Öle &amp; Fette</td>
+    </tr>
+    <tr>
+      <th>Lammfleisch</th>
+      <td>12.529968</td>
+      <td>568.706625</td>
+      <td>116.659306</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Mais</th>
+      <td>0.375898</td>
+      <td>47.694859</td>
+      <td>0.650083</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Milch</th>
+      <td>5.250000</td>
+      <td>1047.000000</td>
+      <td>14.916667</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Nüsse</th>
+      <td>0.069919</td>
+      <td>672.162602</td>
+      <td>2.107317</td>
+      <td>Öle &amp; Fette</td>
+    </tr>
+    <tr>
+      <th>Haferflocken</th>
+      <td>0.945482</td>
+      <td>183.911552</td>
+      <td>2.897446</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Olivenöl</th>
+      <td>0.613122</td>
+      <td>242.285068</td>
+      <td>2.976244</td>
+      <td>Öle &amp; Fette</td>
+    </tr>
+    <tr>
+      <th>Zwiebeln</th>
+      <td>1.351351</td>
+      <td>38.648649</td>
+      <td>1.054054</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Hülsenfrüchte</th>
+      <td>0.524927</td>
+      <td>NaN</td>
+      <td>4.565982</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Palmöl</th>
+      <td>0.828054</td>
+      <td>0.723982</td>
+      <td>0.273756</td>
+      <td>Öle &amp; Fette</td>
+    </tr>
+    <tr>
+      <th>Erbsen</th>
+      <td>0.283237</td>
+      <td>NaN</td>
+      <td>2.156069</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Schweinefleisch</th>
+      <td>5.150628</td>
+      <td>751.380753</td>
+      <td>7.263598</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Kartoffeln</th>
+      <td>0.628415</td>
+      <td>80.737705</td>
+      <td>1.202186</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Hühnerfleisch</th>
+      <td>5.335135</td>
+      <td>356.756757</td>
+      <td>6.605405</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Garnele</th>
+      <td>26.087379</td>
+      <td>3413.009709</td>
+      <td>2.883495</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Rapsöl</th>
+      <td>0.426471</td>
+      <td>26.889140</td>
+      <td>1.202489</td>
+      <td>Öle &amp; Fette</td>
+    </tr>
+    <tr>
+      <th>Reis</th>
+      <td>1.207271</td>
+      <td>609.983722</td>
+      <td>0.759631</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Wurzelgemüse</th>
+      <td>1.162162</td>
+      <td>76.756757</td>
+      <td>0.891892</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Sonnenblumenöl</th>
+      <td>0.407240</td>
+      <td>114.015837</td>
+      <td>1.997738</td>
+      <td>Öle &amp; Fette</td>
+    </tr>
+    <tr>
+      <th>Tofu</th>
+      <td>1.166052</td>
+      <td>54.833948</td>
+      <td>1.298893</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Tomate</th>
+      <td>11.000000</td>
+      <td>1946.315789</td>
+      <td>4.210526</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Weizen</th>
+      <td>0.586843</td>
+      <td>242.026217</td>
+      <td>1.439075</td>
+      <td>Getreide</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="testing-how-to-create-automated-list-for-checkboxes">
+<h2>Testing how to create automated list for checkboxes<a class="headerlink" href="#testing-how-to-create-automated-list-for-checkboxes" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create List with Dictionaries to create checkbox options automatically</span>
+<span class="n">foods</span><span class="o">=</span><span class="n">df_impact</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> 
+<span class="n">checkboxes</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">foods</span><span class="p">:</span>
+  <span class="n">element</span> <span class="o">=</span><span class="p">{}</span>
+  <span class="n">element</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">x</span>
+  <span class="n">element</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+  <span class="n">checkboxes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Export to csv<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data for Figure: Impact of single foods - Scatterplot</span>
+<span class="n">df_impact</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;fig4_effect_of_different_foods.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
+<h1>Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet<a class="headerlink" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-preparation">
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import data</span>
+<span class="n">df_diet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/eat-lancet-diet-comparison.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Change Datatypes</span>
+<span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="filter-data">
+<h2>Filter Data<a class="headerlink" href="#filter-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Float values are Gramm</span>
+<span class="c1">#Choose most current data for each country</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+<span class="n">df_diet</span><span class="o">=</span><span class="n">df_diet</span><span class="p">[</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>173
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop row with missing Value</span>
+<span class="n">df_diet</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+
+<span class="c1">#drop column year and code as we are only viewing data from the most current year and will use the country name as value</span>
+<span class="n">df_diet</span><span class="o">=</span><span class="n">df_diet</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">df_diet</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Entity</th>
+      <th>Code</th>
+      <th>cereals</th>
+      <th>roots_tubers</th>
+      <th>vegetables</th>
+      <th>fruits</th>
+      <th>milk_equivalents</th>
+      <th>red_meat</th>
+      <th>poultry</th>
+      <th>eggs</th>
+      <th>seafood</th>
+      <th>legumes</th>
+      <th>nuts</th>
+      <th>oils</th>
+      <th>sugar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>485.753425</td>
+      <td>17.232877</td>
+      <td>132.438356</td>
+      <td>104.739726</td>
+      <td>148.465753</td>
+      <td>18.520548</td>
+      <td>4.191781</td>
+      <td>4.109589</td>
+      <td>0.684932</td>
+      <td>5.780822</td>
+      <td>1.506849</td>
+      <td>14.328767</td>
+      <td>24.986301</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Albania</td>
+      <td>ALB</td>
+      <td>399.342466</td>
+      <td>124.986301</td>
+      <td>813.315069</td>
+      <td>468.712329</td>
+      <td>1085.863014</td>
+      <td>84.876712</td>
+      <td>44.821918</td>
+      <td>40.164384</td>
+      <td>14.684932</td>
+      <td>16.438356</td>
+      <td>10.465753</td>
+      <td>31.890411</td>
+      <td>58.082192</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Algeria</td>
+      <td>DZA</td>
+      <td>598.794520</td>
+      <td>180.931507</td>
+      <td>509.808219</td>
+      <td>279.232877</td>
+      <td>333.452055</td>
+      <td>31.013699</td>
+      <td>17.479452</td>
+      <td>23.095890</td>
+      <td>10.575342</td>
+      <td>20.931507</td>
+      <td>5.041096</td>
+      <td>46.356164</td>
+      <td>73.013699</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Angola</td>
+      <td>AGO</td>
+      <td>284.958904</td>
+      <td>566.575343</td>
+      <td>72.082192</td>
+      <td>187.726027</td>
+      <td>26.000000</td>
+      <td>34.520548</td>
+      <td>28.931507</td>
+      <td>1.835616</td>
+      <td>55.397260</td>
+      <td>20.356164</td>
+      <td>0.191781</td>
+      <td>21.972603</td>
+      <td>31.041096</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Antigua and Barbuda</td>
+      <td>ATG</td>
+      <td>208.027397</td>
+      <td>50.383562</td>
+      <td>189.068493</td>
+      <td>372.794520</td>
+      <td>220.876712</td>
+      <td>48.438356</td>
+      <td>148.219178</td>
+      <td>7.890411</td>
+      <td>143.945205</td>
+      <td>6.383562</td>
+      <td>0.876712</td>
+      <td>28.410959</td>
+      <td>74.301370</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="bring-data-into-necessary-form">
+<h2>Bring data into necessary form<a class="headerlink" href="#bring-data-into-necessary-form" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Bring data into necessary form</span>
+<span class="n">df_diet_for</span> <span class="o">=</span> <span class="n">df_diet</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Entity&#39;</span><span class="p">,</span> <span class="s1">&#39;Code&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;gramm&#39;</span><span class="p">)</span>
+
+<span class="c1">#Rename Column</span>
+<span class="n">df_diet_for</span> <span class="o">=</span> <span class="n">df_diet_for</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;level_1&#39;</span><span class="p">:</span><span class="s1">&#39;food&#39;</span><span class="p">,</span> <span class="s1">&#39;Entity&#39;</span><span class="p">:</span><span class="s1">&#39;country&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>food</th>
+      <th>gramm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>cereals</td>
+      <td>485.753425</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>roots_tubers</td>
+      <td>17.232877</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>vegetables</td>
+      <td>132.438356</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>fruits</td>
+      <td>104.739726</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>milk_equivalents</td>
+      <td>148.465753</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Afghanistan</td>
+      <td>red_meat</td>
+      <td>18.520548</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Afghanistan</td>
+      <td>poultry</td>
+      <td>4.191781</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Afghanistan</td>
+      <td>eggs</td>
+      <td>4.109589</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Afghanistan</td>
+      <td>seafood</td>
+      <td>0.684932</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Afghanistan</td>
+      <td>legumes</td>
+      <td>5.780822</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Afghanistan</td>
+      <td>nuts</td>
+      <td>1.506849</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Afghanistan</td>
+      <td>oils</td>
+      <td>14.328767</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Afghanistan</td>
+      <td>sugar</td>
+      <td>24.986301</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Albania</td>
+      <td>cereals</td>
+      <td>399.342466</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Albania</td>
+      <td>roots_tubers</td>
+      <td>124.986301</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Albania</td>
+      <td>vegetables</td>
+      <td>813.315069</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Albania</td>
+      <td>fruits</td>
+      <td>468.712329</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Albania</td>
+      <td>milk_equivalents</td>
+      <td>1085.863014</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Albania</td>
+      <td>red_meat</td>
+      <td>84.876712</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Albania</td>
+      <td>poultry</td>
+      <td>44.821918</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Save Unique categorys in list</span>
+<span class="n">english</span><span class="o">=</span><span class="n">df_diet_for</span><span class="p">[</span><span class="s1">&#39;food&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+<span class="n">english</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;cereals&#39;, &#39;roots_tubers&#39;, &#39;vegetables&#39;, &#39;fruits&#39;,
+       &#39;milk_equivalents&#39;, &#39;red_meat&#39;, &#39;poultry&#39;, &#39;eggs&#39;, &#39;seafood&#39;,
+       &#39;legumes&#39;, &#39;nuts&#39;, &#39;oils&#39;, &#39;sugar&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Replace english words with german</span>
+<span class="n">df_diet_for</span><span class="o">=</span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">english</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Getreide&#39;</span><span class="p">,</span> <span class="s1">&#39;Wurzelgemüse&#39;</span><span class="p">,</span> <span class="s1">&#39;Gemüse&#39;</span><span class="p">,</span> <span class="s1">&#39;Obst&#39;</span><span class="p">,</span> <span class="s1">&#39;Milch und Milchalternativen&#39;</span><span class="p">,</span> <span class="s1">&#39;Rotes Fleisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Geflügel&#39;</span><span class="p">,</span> <span class="s1">&#39;Eier&#39;</span><span class="p">,</span> <span class="s1">&#39;Fisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Hülsenfrüchte&#39;</span><span class="p">,</span> <span class="s1">&#39;Nüsse&#39;</span><span class="p">,</span> <span class="s1">&#39;Öl&#39;</span><span class="p">,</span> <span class="s1">&#39;Zucker&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Pflanzliche Produkte&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Wurzelgemüse&#39;</span><span class="p">,</span> <span class="s1">&#39;Gemüse&#39;</span><span class="p">,</span> <span class="s1">&#39;Obst&#39;</span><span class="p">,</span> <span class="s1">&#39;Hülsenfrüchte&#39;</span><span class="p">,</span> <span class="s1">&#39;Nüsse&#39;</span><span class="p">]</span> 
+        <span class="k">else</span> <span class="s1">&#39;Fleisch &amp; Fisch&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Rotes Fleisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Geflügel&#39;</span><span class="p">,</span> <span class="s1">&#39;Fisch&#39;</span><span class="p">]</span>
+        <span class="k">else</span>  <span class="s1">&#39;Getreide&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Getreide&#39;</span><span class="p">]</span>
+        <span class="k">else</span> <span class="s1">&#39;Öl&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s1">&#39;Öl&#39;</span>
+        <span class="k">else</span> <span class="s1">&#39;Zucker&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s1">&#39;Zucker&#39;</span>
+        <span class="k">else</span> <span class="s1">&#39;Milchprodukte &amp; Eier&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Milch und Milchalternativen&#39;</span><span class="p">,</span> <span class="s1">&#39;Eier&#39;</span><span class="p">]</span>
+        <span class="k">else</span> <span class="s1">&#39;Sonstige&#39;</span>
+        
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df_diet_for</span><span class="p">[</span><span class="s1">&#39;food&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>food</th>
+      <th>gramm</th>
+      <th>group</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Getreide</td>
+      <td>485.753425</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Wurzelgemüse</td>
+      <td>17.232877</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Gemüse</td>
+      <td>132.438356</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Obst</td>
+      <td>104.739726</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Milch und Milchalternativen</td>
+      <td>148.465753</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>food</th>
+      <th>gramm</th>
+      <th>group</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Getreide</td>
+      <td>485.753425</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Wurzelgemüse</td>
+      <td>17.232877</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Gemüse</td>
+      <td>132.438356</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Obst</td>
+      <td>104.739726</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Milch und Milchalternativen</td>
+      <td>148.465753</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Rotes Fleisch</td>
+      <td>18.520548</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Geflügel</td>
+      <td>4.191781</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Eier</td>
+      <td>4.109589</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Fisch</td>
+      <td>0.684932</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Hülsenfrüchte</td>
+      <td>5.780822</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Nüsse</td>
+      <td>1.506849</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Öl</td>
+      <td>14.328767</td>
+      <td>Öl</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Zucker</td>
+      <td>24.986301</td>
+      <td>Zucker</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Getreide</td>
+      <td>399.342466</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Wurzelgemüse</td>
+      <td>124.986301</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Gemüse</td>
+      <td>813.315069</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Obst</td>
+      <td>468.712329</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Milch und Milchalternativen</td>
+      <td>1085.863014</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Rotes Fleisch</td>
+      <td>84.876712</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Geflügel</td>
+      <td>44.821918</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Eier</td>
+      <td>40.164384</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Fisch</td>
+      <td>14.684932</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Hülsenfrüchte</td>
+      <td>16.438356</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Nüsse</td>
+      <td>10.465753</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Öl</td>
+      <td>31.890411</td>
+      <td>Öl</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>Zucker</td>
+      <td>58.082192</td>
+      <td>Zucker</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Getreide</td>
+      <td>598.794520</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Wurzelgemüse</td>
+      <td>180.931507</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Gemüse</td>
+      <td>509.808219</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Obst</td>
+      <td>279.232877</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Milch und Milchalternativen</td>
+      <td>333.452055</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Rotes Fleisch</td>
+      <td>31.013699</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Geflügel</td>
+      <td>17.479452</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Eier</td>
+      <td>23.095890</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Fisch</td>
+      <td>10.575342</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Hülsenfrüchte</td>
+      <td>20.931507</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Nüsse</td>
+      <td>5.041096</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Öl</td>
+      <td>46.356164</td>
+      <td>Öl</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>Zucker</td>
+      <td>73.013699</td>
+      <td>Zucker</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Getreide</td>
+      <td>284.958904</td>
+      <td>Getreide</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Wurzelgemüse</td>
+      <td>566.575343</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Gemüse</td>
+      <td>72.082192</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Obst</td>
+      <td>187.726027</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Milch und Milchalternativen</td>
+      <td>26.000000</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Rotes Fleisch</td>
+      <td>34.520548</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Geflügel</td>
+      <td>28.931507</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Eier</td>
+      <td>1.835616</td>
+      <td>Milchprodukte &amp; Eier</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Fisch</td>
+      <td>55.397260</td>
+      <td>Fleisch &amp; Fisch</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Hülsenfrüchte</td>
+      <td>20.356164</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>Nüsse</td>
+      <td>0.191781</td>
+      <td>Pflanzliche Produkte</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="translate-countries-to-german">
+<h2>Translate countries to german<a class="headerlink" href="#translate-countries-to-german" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Translation list from previous plot</span>
+<span class="n">countries</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>de</th>
+    </tr>
+    <tr>
+      <th>en</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Andorra</th>
+      <td>Andorra</td>
+    </tr>
+    <tr>
+      <th>United Arab Emirates</th>
+      <td>Vereinigte Arabische Emirate</td>
+    </tr>
+    <tr>
+      <th>Afghanistan</th>
+      <td>Afghanistan</td>
+    </tr>
+    <tr>
+      <th>Antigua and Barbuda</th>
+      <td>Antigua und Barbuda</td>
+    </tr>
+    <tr>
+      <th>Anguilla</th>
+      <td>Anguilla</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#merge columns</span>
+<span class="n">df_diet_for</span> <span class="o">=</span> <span class="n">df_diet_for</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">countries</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>food       0
+gramm      0
+group      0
+de       117
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_diet_for</span><span class="p">[</span><span class="n">df_diet_for</span><span class="p">[</span><span class="s1">&#39;de&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Congo&#39;, &#39;Cote d&#39;Ivoire&#39;, &#39;Czechia&#39;, &#39;EAT-Lancet&#39;, &#39;Eswatini&#39;,
+       &#39;Hong Kong&#39;, &#39;Macao&#39;, &#39;North Macedonia&#39;, &#39;Timor&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#fill exceptions</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Congo&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Kongo&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s2">&quot;Cote d&#39;Ivoire&quot;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Cote d&#39;Ivoire&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s2">&quot;Czechia&quot;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Tschechien&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;EAT-Lancet&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;EAT-Lancet&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Eswatini&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Eswatini&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Hong Kong&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Hong Kong&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Macao&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Macao&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;North Macedonia&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Nordmazedonien&quot;</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Timor&#39;</span><span class="p">],</span> <span class="s1">&#39;de&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Timor&quot;</span>
+
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>food     0
+gramm    0
+group    0
+de       0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop index</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1">#rename country column</span>
+<span class="n">df_diet_for</span><span class="o">=</span><span class="n">df_diet_for</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;de&#39;</span><span class="p">:</span> <span class="s1">&#39;country&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Export to csv<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data for comparison of different countries with diet recommended by EAT-Lancet</span>
+<span class="n">df_diet_for</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;fig5_diets.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="steps.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Vorgehen</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="report_pdf.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Preparation</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Durch Sophia Engstler<br/>
+        
+            &copy; Urheberrechte © 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

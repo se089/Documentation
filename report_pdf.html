@@ -1,0 +1,1250 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preparation &#8212; Data Storytelling - Dokumentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Styling" href="data_excel.html" />
+    <link rel="prev" title="Fig 3: World-map and line-graph – Total GHG-Emissions by country" href="data_preparation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Storytelling - Dokumentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Dieses Buch durchsuchen ..." aria-label="Dieses Buch durchsuchen ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Projektdokumentation
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Vorgehen
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="steps.html">
+   Projektplanung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_preparation.html">
+   Fig 3: World-map and line-graph – Total GHG-Emissions by country
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Preparation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_excel.html">
+   Styling
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Aufbau der Story
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="story.html">
+   Story
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Gestaltung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="design.html">
+   Design
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navigation umschalten" aria-controls="site-navigation"
+                title="Navigation umschalten" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/report_pdf.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Freport_pdf.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/report_pdf.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Starten Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Preparation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environmental-impact-of-the-food-industry">
+   1 Environmental Impact of the food industry
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-1-1-different-impacts">
+     Figure 1.1 Different impacts
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-1-2-ghg-emissions-along-the-production-chain">
+     Figure 1.2 GHG emissions along the production chain
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-1-3-global-distribution-of-ghg-emissions-by-food-production">
+     Figure 1.3 Global distribution of GHG Emissions by food production
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-1-4-evolution-of-global-ghg-emissions">
+     Figure 1.4 Evolution of global GHG Emissions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environmental-impact-of-single-foods">
+   2 Environmental Impact of single foods
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-2-1-ghg-emissions-freshwater-and-land-use-of-single-foods">
+     Figure 2.1 GHG-emissions, freshwater- and land-use of single foods
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fig-2-2-only-plant-products">
+     Fig 2.2: Only plant products
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fig-2-3-only-animal-products">
+     Fig 2.3: Only animal products
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comparing-different-diets">
+   3 Comparing different diets
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-3-1-comparing-diets-of-different-countries-to-the-sustainable-diet-recommended-by-eat-lancet">
+     Figure 3.1 Comparing diets of different countries to the sustainable diet recommended by EAT-Lancet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   4 Conclusion
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#render-text-and-figures-in-template">
+   Render text and figures in template
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">jinja2</span>
+<span class="kn">import</span> <span class="nn">pdfkit</span>
+<span class="kn">from</span> <span class="nn">xhtml2pdf</span> <span class="kn">import</span> <span class="n">pisa</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="c1">#for worldmap</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">import</span> <span class="nn">json</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_65548</span><span class="o">/</span><span class="mf">3783352548.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">jinja2</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pdfkit</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">xhtml2pdf</span> <span class="kn">import</span> <span class="n">pisa</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preparation">
+<h1>Preparation<a class="headerlink" href="#preparation" title="Permalink to this headline">¶</a></h1>
+<p>Firstly, we will create a HTML-report with jinja2. Afterwards, this html-file will be converted to pdf by pdfkit.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Template handling</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">jinja2</span><span class="o">.</span><span class="n">Environment</span><span class="p">(</span><span class="n">loader</span><span class="o">=</span><span class="n">jinja2</span><span class="o">.</span><span class="n">FileSystemLoader</span><span class="p">(</span><span class="n">searchpath</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="n">template</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;report_template.html&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Define document colors: 0:Green, 1:yellow, 2:red, 3:beige, 4:grey, 5:light-green, 6:light-yellow, 7:light-red, 8:dark-beige, 9: light-grey</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#1D7151&#39;</span><span class="p">,</span> <span class="s1">&#39;#E39617&#39;</span><span class="p">,</span> <span class="s1">&#39;#CC0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#E3DCCA&#39;</span><span class="p">,</span> <span class="s1">&#39;#505C5D&#39;</span><span class="p">,</span> <span class="s1">&#39;#8FBF99&#39;</span><span class="p">,</span> <span class="s1">&#39;#F2C279&#39;</span><span class="p">,</span><span class="s1">&#39;#F2AA91&#39;</span><span class="p">,</span> <span class="s1">&#39;#CCAD99&#39;</span><span class="p">,</span> <span class="s1">&#39;#ACBFBF&#39;</span><span class="p">]</span>
+<span class="n">font</span><span class="o">=</span><span class="s1">&#39;Roboto-light, Gravitas One, Raleway, Arial, sans-serif&#39;</span>
+<span class="n">title_font</span><span class="o">=</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">introduction</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Der Klimawandel ist aktueller denn je. Um diesem entgegen zu wirken, müssen Treibhausgasemissionen und negative Einflüsse auf unsere Umwelt reduziert oder gänzlich vermieden werden.</span>
+<span class="s1">                Die &lt;b&gt;&lt;font color=&#39;#1D7151&#39;&gt;Lebensmittelindustrie&lt;/font&gt;&lt;/b&gt; ist ein wesentlicher Treiber dieser Umweltschäden. Eine bewusste Auswahl von Lebensmitteln und eine gesunde Ernährung sind eine wirksame Möglichkeit, um auch als Endverbraucher die Nachhaltigkeit dieses Sektors zu fördern. </span>
+<span class="s1">                In diesem Bericht gehen wir auf die &lt;b&gt;Umweltauswirkungen&lt;/b&gt; der Lebensmittelindustrie ein. Insbesondere zeigen wir den &lt;b&gt;Ursprung&lt;/b&gt; und die &lt;b&gt;Entwicklung&lt;/b&gt; der Treibhausgasemissionen. </span>
+<span class="s1">                Des Weiteren zeigen wir den Umwelteinfluss einzelner Lebensmittel auf, geben eine &lt;b&gt;Ernährungsempfehlung&lt;/b&gt; und vergleichen diese mit der durchschnittlichen Ernährungsweise einzelner Länder.</span>
+<span class="s1">                &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="environmental-impact-of-the-food-industry">
+<h1>1 Environmental Impact of the food industry<a class="headerlink" href="#environmental-impact-of-the-food-industry" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="figure-1-1-different-impacts">
+<h2>Figure 1.1 Different impacts<a class="headerlink" href="#figure-1-1-different-impacts" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_1_1_title</span><span class="o">=</span><span class="s1">&#39;Wie wirkt sich die Lebensmittelindustrie auf die Umwelt aus?&#39;</span>
+<span class="n">fig_1_1_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Die Grafik zeigt, welchen Anteil die Lebensmittelindustrie an verschiedenen, negativen Umweltauswirkungen besitzt. So ist die Lebensmittelindustrie z.B. für &lt;b&gt;ein Drittel der weltweiten Treibhausgasemissionen&lt;/b&gt; verantwortlich. &lt;br&gt;</span>
+<span class="s1">                    Für den Anbau und die Tierhaltung werden &lt;b&gt;50</span><span class="si">% d</span><span class="s1">er weltweit nutzbaren Fläche&lt;/b&gt; beansprucht. Die Anbauflächen werden dabei überwiegend für die Futtermittelproduktion der Tiere (77%) und nicht für direkte Nahrungsmittel für den Menschen genutzt.&lt;br&gt;</span>
+<span class="s1">                    Die andere Hälfte umfasst menschlichen Wohnraum, Wälder und Süßwasser. &lt;br&gt;Des Weiteren werden für die Bewässerung und Tierhaltung große Mengen Wasser benötigt. &lt;b&gt;70</span><span class="si">% d</span><span class="s1">es weltweiten Süßwasserverbrauchs&lt;/b&gt; entsteht durch die Landwirtschaft, Industrie und Privathaushalte verbrauchen im Vergleich dazu nur 19 % bzw. 11%.</span>
+<span class="s1">                    &lt;br&gt;Ein weiterer wichtiger, negativer Einfluss auf unsere Umwelt ist die Eutrophierung. Eutrophierung bezeichnet die Verschmutzung von Gewässern in Form von schädlichem Pflanzenwachstum durch den Eintrag nährstoffreicher Schadstoffe. Hauptursache für diese Verschmutzung ist die Überdüngung von Böden in der Landwirtschaft.</span>
+<span class="s1">                    &lt;br&gt;Außerdem beeinflusst die Landwirtschaft auch die Artenvielfalt. 94</span><span class="si">% a</span><span class="s1">ller Säugetiere (Menschen ausgeschlossen) sind Nutztiere. Das heißt &lt;b&gt;nur 6</span><span class="si">% d</span><span class="s1">er Säugetiere leben in freier Wildbahn.&lt;/b&gt;&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+<span class="n">df_impact_total</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Dashboard/fig1_environmental_impact_food.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;impact&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;impact&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;sector&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;sector&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+
+
+<span class="n">fig_1_1</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">([</span>
+        <span class="c1">#Bar 1 : Lebensmittelindustrie</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Lebensmittelindustrie&#39;</span><span class="p">,</span> 
+                <span class="n">x</span><span class="o">=</span><span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;impact&#39;</span><span class="p">],</span> 
+                <span class="n">y</span><span class="o">=</span><span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;percent&#39;</span><span class="p">],</span>
+                
+                <span class="n">customdata</span><span class="o">=</span><span class="n">df_impact_total</span><span class="p">[</span><span class="s1">&#39;sector&#39;</span><span class="p">],</span>
+                <span class="c1">#hide hovertext</span>
+                <span class="n">hovertext</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                <span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span>
+                <span class="n">marker_color</span><span class="o">=</span> <span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">]],</span>
+                <span class="n">text</span> <span class="o">=</span> <span class="n">df_impact_total</span><span class="p">[</span><span class="s2">&quot;percent&quot;</span><span class="p">],</span>
+                <span class="n">texttemplate</span><span class="o">=</span><span class="s1">&#39;%{text:p}&#39;</span><span class="p">,</span>
+                <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="n">textposition</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span>
+                     
+                <span class="p">),</span>
+        
+<span class="p">])</span>
+<span class="n">fig_1_1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+                <span class="n">barmode</span><span class="o">=</span><span class="s1">&#39;stack&#39;</span><span class="p">,</span> <span class="c1">#creates stacked plot instead of two bars next to each other</span>
+                <span class="c1"># Label axis + title</span>
+                <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Anteil der &lt;b style=&#39;color:#1D7151&#39;&gt;Lebensmittelindustrie&lt;/b&gt; an verschiedenen Umweltschäden&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+                <span class="c1">#xaxis = {&quot;title&quot;: &quot;Art des Umwelteinflusses&quot;},</span>
+                <span class="n">yaxis</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;tickformat&#39;</span><span class="p">:</span><span class="s1">&#39;.0%&#39;</span><span class="p">},</span>
+                <span class="n">font_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+                <span class="c1">#legend={&#39;orientation&#39;:&#39;h&#39;, &#39;yanchor&#39;:&quot;bottom&quot;,&#39;y&#39;:1.02,&#39;xanchor&#39;:&quot;right&quot;,&#39;x&#39;:1},</span>
+                <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1_1</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_1_1.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;600&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="figure-1-2-ghg-emissions-along-the-production-chain">
+<h2>Figure 1.2 GHG emissions along the production chain<a class="headerlink" href="#figure-1-2-ghg-emissions-along-the-production-chain" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_1_2_title</span><span class="o">=</span><span class="s1">&#39;Wie entstehen die Treibhausgasemissionen in der Landwirtschaft?&#39;</span>
+<span class="n">fig_1_2_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Da Energie vor allem in der Industrie ebenfalls ein wichtiger Treiber des Klimawandels ist, konzentrieren sich die aktuellen Gegenmaßnahmen hauptsächlich auf den Einsatz erneuerbarer Energien, einer Steigerung der Energieeffizienz und einer kohlenstoffarmen Verkehrsalternative. </span>
+<span class="s1">                Nachgelagerte Prozesse wie die Verarbeitung, Verpackung und Transport der Lebensmittel können durch die Weiterentwicklungen im Energiebereich reduziert werden. Jedoch sind &lt;font color=&#39;#CC0000&#39;&gt;nachgelagerte Prozesse z.B. Verpackung und Transport&lt;/font&gt; nur einen geringen Teil (15%) der Emissionen in der Lebensmittelindustrie verantwortlich. </span>
+<span class="s1">                Dies widerlegt auch die verbreitete Annahme, dass regionale Lebensmittel die Lösung für eine nachhaltige Ernährung sind.&lt;br&gt;</span>
+<span class="s1">                Der Großteil der Treibhausgasemissionen entsteht hier nämlich in der &lt;font color=&#39;#E39617&#39;&gt;Landwirtschaft&lt;/font&gt; (39%) und durch die &lt;font color=&#39;#1D7151&#39;&gt;Flächennutzung&lt;/font&gt; (32%). Hier gibt es aktuell noch keine praktikablen Lösungen, um diesen Emissionen entgegen zu wirken. </span>
+<span class="s1">                Dünger ist unersetzlich, um den wachsenden Nahrungsmittelbedarf zu decken und die Methanproduktion von Rindern kann nicht verhindert werden. Deswegen benötigen wir vor allem eine Verbesserung der landwirtschaftlichen Effizienz und neue Technologien, um kohlenstoffarme Lebensmittel skalierbar und erschwinglich zu machen.&lt;br&gt;</span>
+<span class="s1">               &lt;font color=&#39;#CCAD99&#39;&gt; Nach dem Verkauf&lt;/font&gt; an den Endkunden entstehen weitere Emissionen hauptsächlich in Form von Abfall. Als Endverbraucher ist die Vermeidung von Lebensmittelverschwendung eine gute Möglichkeit, um die Emissionen zu senken.&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+<span class="n">df_impact_steps</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Dashboard/fig2_emissions-food-per-step.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="c1">#Change Datatypes</span>
+<span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;step&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;step&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;detail&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;detail&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="c1">#Add constant column</span>
+<span class="c1">#df_impact_steps[&#39;sector&#39;]=&#39;Food Industry&#39;</span>
+
+<span class="n">fig_1_2</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">([</span>
+        <span class="c1">#Bar 1 : Lebensmittelindustrie</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;percentage&#39;</span><span class="p">],</span> 
+                <span class="n">labels</span><span class="o">=</span><span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;detail&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;br&gt;&#39;</span><span class="p">)),</span>
+                <span class="c1">#text</span>
+                <span class="n">insidetextorientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+                <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="n">sort</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="n">customdata</span><span class="o">=</span><span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;step&#39;</span><span class="p">],</span>
+                <span class="c1">#hovertext</span>
+                <span class="n">hovertext</span><span class="o">=</span><span class="n">df_impact_steps</span><span class="p">[</span><span class="s1">&#39;detail&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;br&gt;&#39;</span><span class="p">)),</span>
+                <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;%</span><span class="si">{customdata[0]}</span><span class="s2">&lt;/b&gt;&lt;extra&gt;&lt;/extra&gt;&quot;</span>
+                <span class="p">)</span>
+<span class="p">])</span>
+
+<span class="c1">#Styling</span>
+<span class="n">fig_1_2</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textinfo</span><span class="o">=</span><span class="s1">&#39;label+percent&#39;</span><span class="p">,</span> 
+    <span class="n">marker</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;colors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">3</span><span class="p">]],</span>
+    <span class="s1">&#39;line&#39;</span><span class="p">:{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;#fff&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}},</span>
+    <span class="n">textfont_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="n">fig_1_2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Ursprung der Treibhausgasemissionen der Lebensmittelindustrie&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1_2</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_1_2.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;600&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="figure-1-3-global-distribution-of-ghg-emissions-by-food-production">
+<h2>Figure 1.3 Global distribution of GHG Emissions by food production<a class="headerlink" href="#figure-1-3-global-distribution-of-ghg-emissions-by-food-production" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_1_3_title</span><span class="o">=</span><span class="s1">&#39;Die Treibhausgasemissionen der Länder unterscheiden sich stark.&#39;</span>
+<span class="n">fig_1_3_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Die Grafik zeigt die Emissionen jedes Landes, die bei der Produktion von Lebensmitteln entstanden sind und nicht, wo diese Lebensmittel dann tatsächlich konsumiert wurden. Je dunkler ein Land, desto mehr Emissionen entstehen dort.</span>
+<span class="s1">                    Das bedeutet, wenn Brasilien Regenwald abrodet, um Fleisch für die USA zu produzieren, werden die Emissionen Brasilien zugeordnet. </span>
+<span class="s1">                    Auf diese Weise melden die Länder ihre Emissionen an die Vereinten Nationen und legen Klimaziele fest.&lt;br&gt;</span>
+<span class="s1">                    Fünf Staaten haben einen Anteil &lt;b&gt;über 5%&lt;/b&gt; an den globalen Emissionen der Lebensmittelindustrie: &lt;font color=&#39;#B35900&#39;&gt;China (13,8%/2,42 Mrd. t), Indonesien (8,8%/1,58 Mrd. t), USA (8,2%/1,47 Mrd. t), Brasilien (7,4%/1,32 Mrd. t) und Indien (6,3%/1,13 Mrd. t)&lt;/font&gt;. &lt;br&gt;</span>
+<span class="s1">                    Diese Länder waren zu erwarten, da sie sich entweder durch eine hohe Bevölkerungszahl und/oder einen großen Agrarsektor auszeichnen. Allerdings gibt es eine große Lücke zwischen diesen Ländern und dem Rest der Welt. Nach Indien folgt erst wieder Russland mit 465 Mio. t (2,6%).&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#preparation</span>
+<span class="n">df_world</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Dashboard/fig3_global_ghg_emissions.csv&#39;</span><span class="p">)</span>
+<span class="c1">#Change datatypes</span>
+<span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="c1">#load geojson</span>
+<span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+         <span class="n">world</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+<span class="n">df_world_total_sub</span><span class="o">=</span><span class="n">df_world</span><span class="p">[(</span><span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">~</span><span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Developing&#39;</span><span class="p">,</span> <span class="s1">&#39;Industrialized&#39;</span><span class="p">]))]</span>
+
+<span class="n">colorscale</span> <span class="o">=</span> <span class="p">[(</span><span class="mf">0.00</span><span class="p">,</span> <span class="s1">&#39;#F2E6C2&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.16</span><span class="p">,</span> <span class="s1">&#39;#F2E6C2&#39;</span><span class="p">),</span>
+                <span class="p">(</span><span class="mf">0.16</span><span class="p">,</span> <span class="s1">&#39;#F2C279&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.32</span><span class="p">,</span> <span class="s1">&#39;#F2C279&#39;</span><span class="p">),</span>
+                <span class="p">(</span><span class="mf">0.32</span><span class="p">,</span> <span class="s1">&#39;#F2AA3D&#39;</span><span class="p">),</span>  <span class="p">(</span><span class="mf">0.48</span><span class="p">,</span> <span class="s1">&#39;#F2AA3D&#39;</span><span class="p">),</span>
+                <span class="p">(</span><span class="mf">0.48</span><span class="p">,</span> <span class="s1">&#39;#E39617&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.64</span><span class="p">,</span> <span class="s2">&quot;#E39617&quot;</span><span class="p">),</span>
+                <span class="p">(</span><span class="mf">0.64</span><span class="p">,</span> <span class="s1">&#39;#CC7A14&#39;</span><span class="p">),</span>  <span class="p">(</span><span class="mf">0.83</span><span class="p">,</span> <span class="s1">&#39;#CC7A14&#39;</span><span class="p">),</span>
+                <span class="p">(</span><span class="mf">0.83</span><span class="p">,</span> <span class="s1">&#39;#B35900&#39;</span><span class="p">),(</span><span class="mf">1.0</span><span class="p">,</span><span class="s1">&#39;#B35900&#39;</span><span class="p">)]</span>
+<span class="n">mapboxtoken</span><span class="o">=</span><span class="s2">&quot;pk.eyJ1Ijoic2UwODkiLCJhIjoiY2t5YTJhdGJkMDFlNTJvcDh5dnMwc2xhMCJ9.oKhU7ogigoJsOEG85QHv3Q&quot;</span>
+<span class="n">mapboxstyle</span><span class="o">=</span><span class="s2">&quot;mapbox://styles/se089/ckya2d29s34ma16n2v9x5mz6g&quot;</span>
+<span class="n">fig_1_3</span><span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth_mapbox</span><span class="p">(</span>
+        <span class="n">df_world_total_sub</span><span class="p">,</span>
+        <span class="n">geojson</span><span class="o">=</span><span class="n">world</span><span class="p">,</span>
+        <span class="n">locations</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">],</span>
+        <span class="c1">#colorscale</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;total_food_emissions&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)),</span>
+        <span class="n">color_continuous_scale</span><span class="o">=</span><span class="n">colorscale</span><span class="p">,</span>
+        <span class="n">range_color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3000000000</span><span class="p">),</span>
+        
+        <span class="c1">#custom data for hover</span>
+        <span class="n">custom_data</span><span class="o">=</span> <span class="p">[</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">],</span> <span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;total_food_emissions&#39;</span><span class="p">],</span> <span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;share_food_emissions&#39;</span><span class="p">]],</span>
+        
+        <span class="c1">#position map</span>
+        <span class="n">mapbox_style</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">accesstoken</span><span class="o">=</span><span class="n">mapboxtoken</span><span class="p">,</span>
+                          <span class="n">center</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">lat</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">lon</span><span class="o">=-</span><span class="mi">20</span><span class="p">),</span>
+                          <span class="n">style</span><span class="o">=</span><span class="s1">&#39;light&#39;</span><span class="p">,</span> <span class="c1"># change mapbox style</span>
+                          <span class="n">zoom</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+        <span class="n">zoom</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+        <span class="n">center</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;lon&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">},</span>
+        <span class="n">opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+        <span class="n">labels</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">],</span>
+        
+    <span class="p">)</span>
+<span class="c1">#customize colorbar, change number formatting</span>
+<span class="n">fig_1_3</span><span class="o">.</span><span class="n">update_coloraxes</span><span class="p">(</span><span class="n">colorbar_x</span><span class="o">=-</span><span class="mf">0.1</span><span class="p">,</span>
+    
+    <span class="n">colorbar_tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
+    <span class="p">)</span>
+
+<span class="n">fig_1_3</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+    <span class="n">z</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;total_food_emissions&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span> <span class="n">zmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">zmax</span><span class="o">=</span><span class="n">df_world</span><span class="p">[</span><span class="o">~</span><span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Developing&#39;</span><span class="p">,</span> <span class="s1">&#39;Industrialized&#39;</span><span class="p">])][</span><span class="s1">&#39;total_food_emissions&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+    
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;%</span><span class="si">{customdata[0]}</span><span class="s2">:&lt;/b&gt;&lt;br&gt;Emissionen: %{customdata[1]:,r} t&lt;/br&gt;Anteil an globalen Emissionen: %</span><span class="si">{customdata[2]:.2%}</span><span class="s2"> &quot;</span>
+
+<span class="p">)</span>
+<span class="n">fig_1_3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">coloraxis_colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Emissionen &lt;br&gt; in t&quot;</span><span class="p">,</span>
+    <span class="n">tick0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">dtick</span><span class="o">=</span><span class="mi">500000000</span><span class="p">,</span>
+    <span class="n">titleside</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span>
+    <span class="p">),</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Globale Treibhausgasemissionen der Landwirtschaft in t&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">mapbox</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;accesstoken&quot;</span><span class="p">:</span><span class="n">mapboxtoken</span><span class="p">,</span> <span class="s1">&#39;style&#39;</span><span class="p">:</span><span class="s1">&#39;white-bg&#39;</span><span class="p">}</span>
+    <span class="p">)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">fig_1_3.add_scattermapbox(</span>
+<span class="sd">            lon=[100,48],</span>
+<span class="sd">            lat=[80,50],</span>
+<span class="sd">            mode = &#39;markers+text&#39;,</span>
+<span class="sd">            below=&#39;&#39;,</span>
+<span class="sd">            text = [&#39;Russland:&#39;, &#39;USA&#39;],  #a list of strings, one  for each geographical position  (lon, lat)</span>
+<span class="sd">            marker_size=12, marker_color=&#39;rgb(235, 0, 100)&#39;)</span>
+<span class="sd">            &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;\nfig_1_3.add_scattermapbox(\n            lon=[100,48],\n            lat=[80,50],\n            mode = &#39;markers+text&#39;,\n            below=&#39;&#39;,\n            text = [&#39;Russland:&#39;, &#39;USA&#39;],  #a list of strings, one  for each geographical position  (lon, lat)\n            marker_size=12, marker_color=&#39;rgb(235, 0, 100)&#39;)\n            &quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1_3</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_1_3.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;1200&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">colors</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;#1D7151&#39;,
+ &#39;#E39617&#39;,
+ &#39;#CC0000&#39;,
+ &#39;#E3DCCA&#39;,
+ &#39;#505C5D&#39;,
+ &#39;#8FBF99&#39;,
+ &#39;#F2C279&#39;,
+ &#39;#F2AA91&#39;,
+ &#39;#CCAD99&#39;,
+ &#39;#ACBFBF&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="figure-1-4-evolution-of-global-ghg-emissions">
+<h2>Figure 1.4 Evolution of global GHG Emissions<a class="headerlink" href="#figure-1-4-evolution-of-global-ghg-emissions" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_1_4_title</span><span class="o">=</span><span class="s1">&#39;Die gesamten Treibhausgasemissionen steigen.&#39;</span>
+<span class="n">fig_1_4_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Bei prozentualer Ansicht scheint es, als würde der Anteil der &lt;font color=&#39;#1D7151&#39;&gt;Lebensmittelindustrie&lt;/font&gt; an den &lt;font color=&#39;#CC0000&#39;&gt;globalen&lt;/font&gt; Emissionen sinken. Die absolute Anzahl der Emissionen stagniert jedoch in den letzten 20 Jahren bei ungefähr 17 Milliarden Tonnen jährlich. &lt;br&gt;</span>
+<span class="s1">                Dagegen steigt die Summe aller globalen Treibhausgasemissionen stetig an (2015 rund 50 Milliarden Tonnen). Der Anstieg kann u.a. auf ein hohes Bevölkerungswachstum und die andauernde Nutzung fossiler Brennstoffe zurückgeführt werden.</span>
+<span class="s1">                &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+<span class="n">df_world_total_sub</span><span class="o">=</span><span class="n">df_world</span><span class="p">[</span><span class="n">df_world</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;World&#39;</span><span class="p">])]</span>
+
+<span class="c1">#line-graph</span>
+<span class="n">fig_1_4</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+<span class="n">fig_1_4</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;total_ghg&#39;</span><span class="p">],</span>
+                    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+                    <span class="n">marker_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Gesamt&#39;</span><span class="p">))</span>
+<span class="n">fig_1_4</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df_world_total_sub</span><span class="p">[</span><span class="s1">&#39;total_food_emissions&#39;</span><span class="p">],</span> <span class="n">marker_color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Lebensmittelindustrie&#39;</span><span class="p">))</span>
+
+<span class="n">fig_1_4</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;lines&quot;</span><span class="p">,</span> <span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;%{y:,r}&#39;</span><span class="p">)</span>
+<span class="n">fig_1_4</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">hovermode</span><span class="o">=</span><span class="s2">&quot;x unified&quot;</span><span class="p">,</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="c1">#legend={&#39;orientation&#39;:&#39;h&#39;, &#39;yanchor&#39;:&quot;bottom&quot;,&#39;y&#39;:1.01,&#39;xanchor&#39;:&quot;right&quot;,&#39;x&#39;:1},</span>
+    <span class="n">font_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Entwicklung der Treibhausgasemissionen der &lt;b style=&#39;color:#1D7151&#39;&gt;Landwirtschaft&lt;/b&gt; und &lt;b style=&#39;color:#CC0000&#39;&gt;gesamt&lt;/b&gt;&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mf">1.0</span><span class="p">}</span>
+    <span class="p">)</span>
+<span class="n">fig_1_4</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">rangemode</span><span class="o">=</span><span class="s2">&quot;tozero&quot;</span><span class="p">)</span>
+<span class="n">fig_1_4</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">tick0</span><span class="o">=</span><span class="mi">1992</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_1_4</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_1_4.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;800&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="environmental-impact-of-single-foods">
+<h1>2 Environmental Impact of single foods<a class="headerlink" href="#environmental-impact-of-single-foods" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="figure-2-1-ghg-emissions-freshwater-and-land-use-of-single-foods">
+<h2>Figure 2.1 GHG-emissions, freshwater- and land-use of single foods<a class="headerlink" href="#figure-2-1-ghg-emissions-freshwater-and-land-use-of-single-foods" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_2_1_title</span><span class="o">=</span><span class="s1">&#39;Welche Lebensmittel sind besonders umweltschädlich?&#39;</span>
+<span class="n">fig_2_1_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Wichtige Faktoren um den negativen Einfluss von Lebensmitteln auf unsere Umwelt zu messen sind &lt;b&gt;Fläche, Süßwasserverbrauch&lt;/b&gt; und &lt;b&gt;CO2-Emissionen&lt;/b&gt;. Die Grafik zeigt diese Faktoren anhand ausgewählter Lebensmittel.</span>
+<span class="s1">                    Zur besseren Vergleichbarkeit der einzelnen Lebensmittel beziehen sich alle Werte auf 1000 kcal des Produkts.&lt;br&gt;</span>
+<span class="s1">                    Im Vergleich zu &lt;font color=&#39;#1D7151&#39;&gt;pflanzlichen&lt;/font&gt; Lebensmitteln, erzeugen &lt;font color=&#39;#CC0000&#39;&gt;Fleisch und Fisch&lt;/font&gt; deutlich mehr Emissionen. Zudem haben sie durch die Tierhaltung und Produktion von Futtermitteln einen höheren Flächen- und Süßwasserverbrauch.</span>
+<span class="s1">                    &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#preparation</span>
+<span class="n">df_impact_single</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Dashboard/fig4_effect_of_different_foods.csv&#39;</span><span class="p">)</span>
+<span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="c1">#Drop rows with missing values</span>
+<span class="n">df_impact_single</span><span class="o">=</span><span class="n">df_impact_single</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1">#subset with selected foods</span>
+<span class="n">df_impact_single_sub1</span><span class="o">=</span><span class="n">df_impact_single</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Apfel&#39;</span><span class="p">,</span> <span class="s1">&#39;Banane&#39;</span><span class="p">,</span> <span class="s1">&#39;Kartoffeln&#39;</span><span class="p">,</span> <span class="s1">&#39;Tofu&#39;</span><span class="p">,</span> <span class="s1">&#39;Rindfleisch (Milchvieh)&#39;</span><span class="p">,</span> <span class="s1">&#39;Milch&#39;</span><span class="p">,</span> <span class="s1">&#39;Rindfleisch (Fleischzucht)&#39;</span><span class="p">,</span> <span class="s1">&#39;Hühnerfleisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Käse&#39;</span><span class="p">,</span>  <span class="s1">&#39;Fisch&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;Gerste&#39;</span><span class="p">,</span><span class="s1">&#39;Palmöl&#39;</span><span class="p">,</span> <span class="s1">&#39;Dunkle Schokolade&#39;</span><span class="p">,</span> <span class="s1">&#39;Kaffee&#39;</span><span class="p">])]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+<span class="c1"># Create Scatterplot</span>
+<span class="n">fig_2_1</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_impact_single_sub1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;ghg&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;land&quot;</span><span class="p">,</span>
+                    <span class="n">size</span><span class="o">=</span><span class="s2">&quot;freshwater&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> 
+                    <span class="c1">#Define colors and order of legend</span>
+                    <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+                    <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                    <span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                    <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                    <span class="s2">&quot;Süßes&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span>
+                    <span class="s2">&quot;Getreide&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span>
+                    <span class="s2">&quot;Getränke&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span>
+                    <span class="s2">&quot;Öle &amp; Fette&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">5</span><span class="p">]},</span>
+                    <span class="n">category_orders</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">,</span> <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">,</span> <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">,</span> <span class="s2">&quot;Getreide&quot;</span><span class="p">,</span> <span class="s2">&quot;Öle &amp; Fette&quot;</span><span class="p">,</span> <span class="s2">&quot;Süßes&quot;</span><span class="p">,</span> <span class="s1">&#39;Getränke&#39;</span><span class="p">]},</span>
+                    
+                    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span>
+                    <span class="n">size_max</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> 
+                    <span class="c1">#In order to avoid jumping, the range is set to min/max of both axis</span>
+                    <span class="n">range_y</span> <span class="o">=</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;land&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;land&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">+</span><span class="mi">10</span><span class="p">],</span> <span class="n">range_x</span><span class="o">=</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;ghg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;ghg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">+</span><span class="mi">10</span><span class="p">]</span>
+                    <span class="p">)</span>
+<span class="c1">#Update Styling Scatterplot</span>
+
+<span class="c1">#Axis labels</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">xaxis</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Treibhausgasemissionen pro 1000kcal in KG&quot;</span><span class="p">},</span>
+            <span class="n">yaxis</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span><span class="s1">&#39;Benötigte Fläche pro 1000kcal in m&lt;sup&gt;2&lt;/sup&gt;&#39;</span><span class="p">},</span>
+            <span class="n">font_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+            <span class="n">legend_title_text</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Umweltauswirkungen ausgewählter Lebensmittel&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="p">)</span>
+
+<span class="c1">#Disable Hover labels</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;markers&#39;</span><span class="p">,</span> <span class="n">hovertemplate</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">)</span>
+
+
+<span class="c1">#Add annotations</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Apfel, Kartoffeln, &lt;br&gt;Banane, Tofu, &lt;br&gt;Gerste, Palmöl&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">40</span><span class="p">,</span>
+            <span class="n">yshift</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">6.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Käse&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ay</span><span class="o">=-</span><span class="mi">35</span><span class="p">,</span>
+            <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">14.5</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Milch&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">ay</span><span class="o">=-</span><span class="mi">70</span><span class="p">,</span>
+            <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Hühnerfleisch&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+            <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">yshift</span><span class="o">=-</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Fisch&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+            <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">12.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Rindfleisch&lt;br&gt;(Milchvieh)&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
+            <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Dunkle&lt;br&gt;Schokolade&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">27</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">36.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">118</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Rindfleisch (Fleischzucht)&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span>
+            <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_1</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">51</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">38.5</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Kaffee&quot;</span><span class="p">,</span>
+            <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">25</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_2_1</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_2_1.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;1200&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fig-2-2-only-plant-products">
+<h2>Fig 2.2: Only plant products<a class="headerlink" href="#fig-2-2-only-plant-products" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_2_2_title</span><span class="o">=</span><span class="s1">&#39;Welche pflanzlichen Lebensmittel sind besonders umweltschädlich?&#39;</span>
+<span class="n">fig_2_2_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Wie die vorhergehende Abbildung zeigt, sind pflanzliche Produkte generell weniger klimaschädlich als tierische Produkte. Dies gilt auch für Öle und Getreide wie z.B. Gerste, Mais und Reis.&lt;br&gt;</span>
+<span class="s1">                    Betrachten wir diese Produkte genauer, sind &lt;font color=&#39;#1D7151&#39;&gt;Tomaten&lt;/font&gt; aufgrund des hohen Wasserbedarf am umweltschädlichsten. </span>
+<span class="s1">                    Die Werte der anderen Produkte liegen dicht im unteren Wertebereich beieinander.</span>
+<span class="s1">                    &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+
+<span class="c1">#subset with selected foods</span>
+<span class="n">df_impact_single_sub2</span><span class="o">=</span><span class="n">df_impact_single</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;Entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Mais&#39;</span><span class="p">,</span> <span class="s1">&#39;Gerste&#39;</span><span class="p">,</span> <span class="s1">&#39;Tomate&#39;</span><span class="p">,</span> <span class="s1">&#39;Apfel&#39;</span><span class="p">,</span> <span class="s1">&#39;Banane&#39;</span><span class="p">,</span> <span class="s1">&#39;Nüsse&#39;</span><span class="p">,</span> <span class="s1">&#39;Kohl&#39;</span><span class="p">,</span> <span class="s1">&#39;Beeren&#39;</span><span class="p">,</span> <span class="s1">&#39;Zitrone&#39;</span><span class="p">,</span> <span class="s1">&#39;Olivenöl&#39;</span><span class="p">,</span> <span class="s1">&#39;Tofu&#39;</span><span class="p">,</span> <span class="s1">&#39;Kartoffeln&#39;</span><span class="p">,</span> <span class="s1">&#39;Reis&#39;</span><span class="p">])]</span>
+
+<span class="c1"># Create Scatterplot</span>
+<span class="n">fig_2_2</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_impact_single_sub2</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;ghg&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;land&quot;</span><span class="p">,</span>
+                    <span class="n">size</span><span class="o">=</span><span class="s2">&quot;freshwater&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> 
+                    <span class="c1">#Define colors and order of legend</span>
+                    <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+                    <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                    <span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                    <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                    <span class="s2">&quot;Süßes&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span>
+                    <span class="s2">&quot;Getreide&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span>
+                    <span class="s2">&quot;Getränke&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span>
+                    <span class="s2">&quot;Öle &amp; Fette&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">5</span><span class="p">]},</span>
+                    <span class="n">category_orders</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">,</span> <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">,</span> <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">,</span> <span class="s2">&quot;Getreide&quot;</span><span class="p">,</span> <span class="s2">&quot;Öle &amp; Fette&quot;</span><span class="p">,</span> <span class="s2">&quot;Süßes&quot;</span><span class="p">,</span> <span class="s1">&#39;Getränke&#39;</span><span class="p">]},</span>
+                    
+                    <span class="c1">#text=&quot;Entity&quot;,</span>
+                    <span class="n">size_max</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> 
+                    <span class="c1">#In order to avoid jumping, the range is set to min/max of both axis</span>
+                    <span class="n">range_y</span> <span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">range_x</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+                    <span class="p">)</span>
+<span class="c1">#Update Styling Scatterplot</span>
+
+<span class="c1">#Axis labels</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">xaxis</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Treibhausgasemissionen pro 1000kcal in KG&quot;</span><span class="p">},</span>
+            <span class="n">yaxis</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span><span class="s1">&#39;Benötigte Fläche pro 1000kcal in m&lt;sup&gt;2&lt;/sup&gt;&#39;</span><span class="p">},</span>
+            <span class="n">font_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+            <span class="n">legend_title_text</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Umweltauswirkungen &lt;b style=&#39;color:#1D7151&#39;&gt;pflanzlicher&lt;/b&gt; Lebensmittel&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="p">)</span>
+
+<span class="c1">#Disable Hover labels</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;markers&#39;</span><span class="p">,</span> <span class="n">hovertemplate</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">)</span>
+
+
+<span class="c1">#Add Annotations</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">5.5</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Tomate&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">2.8</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">5.1</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Beeren&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Kohl&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Reis&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.16</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Tofu&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.22</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Gerste&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.37</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.65</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Mais&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=-</span><span class="mi">25</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.89</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Apfel&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">35</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.62</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Kartoffeln&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.06</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">2.1</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Nüsse&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Olivenöl&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.45</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Banane&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">fig_2_2</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">2.6</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Zitrone&#39;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_2_2</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_2_2.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;800&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fig-2-3-only-animal-products">
+<h2>Fig 2.3: Only animal products<a class="headerlink" href="#fig-2-3-only-animal-products" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_2_3_title</span><span class="o">=</span><span class="s1">&#39;Welche tierischen Lebensmittel sind besonders umweltschädlich?&#39;</span>
+<span class="n">fig_2_3_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Betrachten wir nun ausschließlich tierische Produkte, fällt auf, dass sich die einzelnen Lebensmittel hier stärker unterscheiden. Zudem ist der Wertebereich wieder größer. &lt;br&gt;</span>
+<span class="s1">                &lt;font color=&#39;#CC0000&#39;&gt;Garnelen&lt;/font&gt; zeichnen sich durch vergleichbar hohe Treibhausgasemissionen, einen sehr hohen Süßwasser- und geringeren Flächenverbrauch aus. &lt;br&gt;</span>
+<span class="s1">                &lt;font color=&#39;#CC0000&#39;&gt;Rindfleisch aus Fleischzucht&lt;/font&gt; ist aufgrund der Viehhaltung und der benötigten Anbaufläche besonders flächenintensiv und erzeugt die meisten Treibhausgase. &lt;br&gt;</span>
+<span class="s1">                &lt;font color=&#39;#E39617&#39;&gt;Eier und Milchprodukte&lt;/font&gt; sind zwar verglichen mit Fleisch &amp; Fisch weniger klimaschädlich, liegen jedoch immer noch deutlich über den Werten von pflanzlichen Produkten.</span>
+<span class="s1">                &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+
+<span class="c1">#subset with selected foods</span>
+<span class="n">df_impact_single_sub3</span><span class="o">=</span><span class="n">df_impact_single</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Fleisch &amp; Fisch&#39;</span><span class="p">,</span> <span class="s1">&#39;Milchprodukte &amp; Eier&#39;</span><span class="p">])]</span>
+
+<span class="c1"># Create Scatterplot</span>
+<span class="n">fig_2_3</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_impact_single_sub3</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;ghg&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;land&quot;</span><span class="p">,</span>
+                    <span class="n">size</span><span class="o">=</span><span class="s2">&quot;freshwater&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> 
+                    <span class="c1">#Define colors and order of legend</span>
+                    <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+                    <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                    <span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                    <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                    <span class="s2">&quot;Süßes&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span>
+                    <span class="s2">&quot;Getreide&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span>
+                    <span class="s2">&quot;Getränke&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span>
+                    <span class="s2">&quot;Öle &amp; Fette&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">5</span><span class="p">]},</span>
+                    <span class="n">category_orders</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">,</span> <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">,</span> <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">,</span> <span class="s2">&quot;Getreide&quot;</span><span class="p">,</span> <span class="s2">&quot;Öle &amp; Fette&quot;</span><span class="p">,</span> <span class="s2">&quot;Süßes&quot;</span><span class="p">,</span> <span class="s1">&#39;Getränke&#39;</span><span class="p">]},</span>
+                    
+                    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Entity&quot;</span><span class="p">,</span>
+                    <span class="n">size_max</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> 
+                    <span class="c1">#In order to avoid jumping, the range is set to min/max of both axis</span>
+                    <span class="n">range_y</span> <span class="o">=</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;land&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;land&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">+</span><span class="mi">10</span><span class="p">],</span> <span class="n">range_x</span><span class="o">=</span><span class="p">[</span><span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;ghg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="n">df_impact_single</span><span class="p">[</span><span class="s1">&#39;ghg&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">+</span><span class="mi">10</span><span class="p">]</span>
+                    <span class="p">)</span>
+<span class="c1">#Update Styling Scatterplot</span>
+
+<span class="c1">#Axis labels</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">xaxis</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Treibhausgasemissionen pro 1000kcal in KG&quot;</span><span class="p">},</span>
+            <span class="n">yaxis</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span><span class="s1">&#39;Benötigte Fläche pro 1000kcal in m&lt;sup&gt;2&lt;/sup&gt;&#39;</span><span class="p">},</span>
+            <span class="n">font_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+            <span class="n">legend_title_text</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Umweltauswirkungen &lt;b style=&#39;color:#CC0000&#39;&gt;tierischer&lt;/b&gt; Lebensmittel&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            <span class="p">)</span>
+
+<span class="c1">#Disable Hover labels</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;markers&#39;</span><span class="p">,</span> <span class="n">hovertemplate</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">)</span>
+
+<span class="c1">#Add annotations</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">6.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Käse&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ay</span><span class="o">=-</span><span class="mi">35</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">14.5</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Milch&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">ax</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">ay</span><span class="o">=-</span><span class="mi">70</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Hühner-&lt;br&gt;fleisch&quot;</span><span class="p">,</span><span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">ax</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">yshift</span><span class="o">=-</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Schweine-&lt;br&gt;fleisch&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=-</span><span class="mi">50</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Fisch&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">12.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Rindfleisch&lt;br&gt;(Milchvieh)&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">36.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">110</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Rindfleisch (Fleischzucht)&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">12.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">108</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Lammfleisch&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">26</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">22</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Garnele&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ay</span><span class="o">=-</span><span class="mi">35</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">fig_2_3</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Eier&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=-</span><span class="mi">30</span><span class="p">,</span><span class="n">ay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">xshift</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_2_3</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_2_3.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;800&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="comparing-different-diets">
+<h1>3 Comparing different diets<a class="headerlink" href="#comparing-different-diets" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="figure-3-1-comparing-diets-of-different-countries-to-the-sustainable-diet-recommended-by-eat-lancet">
+<h2>Figure 3.1 Comparing diets of different countries to the sustainable diet recommended by EAT-Lancet<a class="headerlink" href="#figure-3-1-comparing-diets-of-different-countries-to-the-sustainable-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#text</span>
+<span class="n">fig_3_1_title</span><span class="o">=</span><span class="s1">&#39;Wie sieht eine gesunde und nachhaltige Ernährung aus?&#39;</span>
+<span class="n">fig_3_1_description</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Die EAT-Lancet-Kommission ist ein Zusammenschluss aus 37 internationalen und weltweit renommierten Forscher*Innen. Sie beschäftigen sich mit der Frage, </span>
+<span class="s1">                    inwieweit trotz rasant wachsenden Bevölkerungszahlen allen Menschen eine &lt;b&gt;gesunde und nachhaltige Ernährung&lt;/b&gt; ermöglicht werden kann. </span>
+<span class="s1">                    Gemeinsam haben sie eine Ernährungsweise entwickelt, die empfohlen wird, um diese Ziele zu erreichen. Das bedeutet, wenn sich alle Menschen an dieser Ernährungsweise orientieren würden, könnten wir der gesamten Weltbevölkerung eine gesunde Ernährung mit ökologischer Nachhaltigkeit ermöglichen. &lt;br&gt;</span>
+<span class="s1">                    Vergleichen wir diese Ernährungsweise mit den Durchschnittswerten ausgewählter Länder, zeigt sich zunächst, dass v.a. die Industriestaaten insgesamt zu viel Lebensmittel konsumieren.&lt;br&gt;</span>
+<span class="s1">                    Ein weiterer wichtiger Unterschied ist die Zusammensetzung der Ernährung. Aktuell konsumieren die Länder deutlich mehr &lt;b&gt;tierische Produkte&lt;/b&gt; als empfohlen. Durchschnittlich isst jeder Deutsche knapp vier mal so viel &lt;font color=&#39;#CC0000&#39;&gt;Fleisch und Fisch&lt;/font&gt; als empfohlen (269g vs. 71g), in den USA ist es sogar über fünf-mal so viel. </span>
+<span class="s1">                    Ähnlich verhält es sich bei &lt;font color=&#39;#E39617&#39;&gt;Milchprodukten und Eiern&lt;/font&gt;. Hier ist der Anteil in Deutschland knapp drei mal größer als empfohlen. &lt;br&gt;</span>
+<span class="s1">                    Das zeigt, dass wir, um uns der empfohlenen Ernährungsweise anzunähern, insbesondere den Konsum von Fleisch und tierischen Produkten reduzieren müssen.</span>
+<span class="s1">                    &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#preparation df</span>
+<span class="n">df_diet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Dashboard/fig5_diets.csv&#39;</span><span class="p">)</span>
+<span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;food&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;food&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_diet</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#figure</span>
+<span class="n">df_diet_sub</span><span class="o">=</span><span class="n">df_diet</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;group&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+                        <span class="s1">&#39;gramm&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span>
+                        <span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">df_diet_sub</span><span class="o">=</span><span class="n">df_diet_sub</span><span class="p">[</span><span class="n">df_diet_sub</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;EAT-Lancet&#39;</span><span class="p">,</span><span class="s1">&#39;Deutschland&#39;</span><span class="p">,</span> <span class="s1">&#39;Vereinigte Staaten von Amerika&#39;</span><span class="p">,</span> <span class="s1">&#39;Frankreich&#39;</span><span class="p">,</span> <span class="s1">&#39;Spanien&#39;</span><span class="p">,</span> <span class="s1">&#39;Italien&#39;</span><span class="p">])]</span>
+<span class="n">fig_3_1</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">data_frame</span><span class="o">=</span><span class="n">df_diet_sub</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;gramm&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;country&quot;</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;gramm&#39;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> 
+        <span class="n">color_discrete_map</span><span class="o">=</span><span class="p">{</span>
+                    <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                    <span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                    <span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                    <span class="s2">&quot;Zucker&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span>
+                    <span class="s2">&quot;Getreide&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span>
+                    <span class="s2">&quot;Öl&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="mi">5</span><span class="p">]},</span>
+        <span class="n">category_orders</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Fleisch &amp; Fisch&quot;</span><span class="p">,</span><span class="s2">&quot;Milchprodukte &amp; Eier&quot;</span><span class="p">,</span>  <span class="s2">&quot;Pflanzliche Produkte&quot;</span><span class="p">,</span> <span class="s2">&quot;Getreide&quot;</span><span class="p">,</span> <span class="s2">&quot;Öl&quot;</span><span class="p">,</span> <span class="s2">&quot;Zucker&quot;</span><span class="p">],</span> <span class="s1">&#39;country&#39;</span><span class="p">:[</span><span class="s1">&#39;Vereinigte Staaten von Amerika&#39;</span><span class="p">,</span> <span class="s1">&#39;Italien&#39;</span><span class="p">,</span> <span class="s1">&#39;Frankreich&#39;</span><span class="p">,</span> <span class="s1">&#39;Spanien&#39;</span><span class="p">,</span> <span class="s1">&#39;Deutschland&#39;</span><span class="p">,</span> <span class="s1">&#39;EAT-Lancet&#39;</span><span class="p">]},</span>
+        <span class="p">)</span>
+
+<span class="c1">#Axis labels</span>
+<span class="n">fig_3_1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+            <span class="n">xaxis</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Lebensmittelkategorie in Gramm&quot;</span><span class="p">},</span>
+            <span class="n">yaxis</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span><span class="kc">None</span><span class="p">},</span>
+            <span class="n">font_family</span><span class="o">=</span><span class="n">font</span><span class="p">,</span>
+            <span class="n">legend_title_text</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="c1">#Minimum text size for inside text</span>
+            <span class="n">uniformtext</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">minsize</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;hide&#39;</span><span class="p">),</span>
+            <span class="n">yaxis_tickformat</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span><span class="s2">&quot;Durchschnittliche Ernährungszusammensetzung ausgewählter Länder und die Empfehlung der EAT-Lancet Kommission&quot;</span><span class="p">,</span><span class="s1">&#39;font_family&#39;</span><span class="p">:</span><span class="s1">&#39;Montserrat-Regular, Raleway, sans-serif&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+            
+            <span class="p">)</span>
+
+<span class="n">fig_3_1</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">hovertemplate</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;skip&#39;</span><span class="p">,</span>
+        <span class="c1">#Text formatting</span>
+        <span class="n">texttemplate</span><span class="o">=</span><span class="s2">&quot;%</span><span class="si">{x:.0f}</span><span class="s2"> g&quot;</span><span class="p">,</span>
+        <span class="n">textposition</span><span class="o">=</span><span class="s1">&#39;inside&#39;</span><span class="p">,</span>
+        <span class="n">insidetextanchor</span><span class="o">=</span><span class="s1">&#39;middle&#39;</span><span class="p">,</span>
+        <span class="n">textangle</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_3_1</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;fig_3_1.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;1200&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="conclusion">
+<h1>4 Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conclusion</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Die Lebensmittelindustrie ist mitverantwortlich für verschiedene Umweltschäden z.B. Treibhausgasemissionen, Ressourcenverbrauch und Eutrophierung.&lt;br&gt;</span>
+<span class="s1">            Die Emissionen stammen hauptsächlich aus der Landwirtschaftlichen Produktion und der Bewirtung der Flächen. Nur ein geringer Anteil entsteht bei der Verpackung und dem Transport.&lt;br&gt;</span>
+<span class="s1">            Abgesehen von einigen, wenigen Ländern, in denen durch einen großen Agrarsektor und eine hohe Bevölkerungszahl überdurchschnittlich viele Emissionen entstehen, verteilen sich die globalen Emissionen der Lebensmittelindustrieweltweit ähnlich.&lt;br&gt;</span>
+<span class="s1">            Einzelne Lebensmittel tragen unterschiedlich stark zum Umwelteinfluss der Industrie bei. &lt;b&gt;&lt;font color=&#39;#1D7151&#39;&gt;Pflanzliche Produkte&lt;/font&gt;&lt;/b&gt; produzieren deutlich weniger Treibhausgase und haben einen geringeren Ressourcenverbrauch als &lt;b&gt;&lt;font color=&#39;#cc0000&#39;&gt;tierische Produkte&lt;/font&gt;&lt;/b&gt; wie Fleisch und Milchprodukte.</span>
+<span class="s1">            Verglichen mit der empfohlenen Ernährungsweise konsumieren die Industriestaaten deutlich &lt;b&gt;zu viel Fleisch, Fisch und tierische Produkte&lt;/b&gt;. Um global eine gesunde und nachhaltige Ernährung zu ermöglichen, sollten diese Kategorien reduziert werden.&lt;br&gt;</span>
+<span class="s1">            Was wir essen hat folglich einen großen Einfluss auf unsere Umwelt. Ein Verzicht auf Fleisch und Fisch ist ein guter und effektiver Weg, um mehr Nachhaltigkeit in den eigenen Alltag zu integrieren.</span>
+<span class="s1">            Gleichzeitig unterstützt dies eine gesunde Ernährung und reduziert das Risiko von Krankheiten wie Diabetes oder Schlaganfällen. Nicht zuletzt kommt eine pflanzenbasierte Ernährung vor allem aber auch den Tieren zu Gute.</span>
+<span class="s1">            &#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="render-text-and-figures-in-template">
+<h1>Render text and figures in template<a class="headerlink" href="#render-text-and-figures-in-template" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">introduction</span><span class="o">=</span><span class="n">introduction</span><span class="p">,</span> 
+                        <span class="n">fig_1_1_title</span><span class="o">=</span><span class="n">fig_1_1_title</span><span class="p">,</span> <span class="n">fig_1_1_description</span><span class="o">=</span><span class="n">fig_1_1_description</span><span class="p">,</span>
+                        <span class="n">fig_1_2_title</span><span class="o">=</span><span class="n">fig_1_2_title</span><span class="p">,</span> <span class="n">fig_1_2_description</span><span class="o">=</span><span class="n">fig_1_2_description</span><span class="p">,</span> 
+                        <span class="n">fig_1_3_title</span><span class="o">=</span><span class="n">fig_1_3_title</span><span class="p">,</span> <span class="n">fig_1_3_description</span><span class="o">=</span><span class="n">fig_1_3_description</span><span class="p">,</span> 
+                        <span class="n">fig_1_4_title</span><span class="o">=</span><span class="n">fig_1_4_title</span><span class="p">,</span> <span class="n">fig_1_4_description</span><span class="o">=</span><span class="n">fig_1_4_description</span><span class="p">,</span> 
+                        <span class="n">fig_2_1_title</span><span class="o">=</span><span class="n">fig_2_1_title</span><span class="p">,</span> <span class="n">fig_2_1_description</span><span class="o">=</span><span class="n">fig_2_1_description</span><span class="p">,</span>
+                        <span class="n">fig_2_2_title</span><span class="o">=</span><span class="n">fig_2_2_title</span><span class="p">,</span> <span class="n">fig_2_2_description</span><span class="o">=</span><span class="n">fig_2_2_description</span><span class="p">,</span> 
+                        <span class="n">fig_2_3_title</span><span class="o">=</span><span class="n">fig_2_3_title</span><span class="p">,</span> <span class="n">fig_2_3_description</span><span class="o">=</span><span class="n">fig_2_3_description</span><span class="p">,</span>  
+                        <span class="n">fig_3_1_title</span><span class="o">=</span><span class="n">fig_3_1_title</span><span class="p">,</span> <span class="n">fig_3_1_description</span><span class="o">=</span><span class="n">fig_3_1_description</span><span class="p">,</span> 
+                        <span class="n">conclusion</span><span class="o">=</span><span class="n">conclusion</span>
+                        <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write the HTML file</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;report.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#convert html to pdf</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;report.pdf&#39;</span><span class="p">,</span> <span class="s2">&quot;w+b&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">result_file</span><span class="p">:</span>
+    <span class="n">pisa</span><span class="o">.</span><span class="n">CreatePDF</span><span class="p">(</span>
+        <span class="n">src</span><span class="o">=</span><span class="n">output</span><span class="p">,</span>  <span class="c1"># HTML to convert</span>
+        <span class="n">dest</span><span class="o">=</span><span class="n">result_file</span><span class="p">)</span>  <span class="c1"># File handle to receive result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selector name or qualifier expected:: (&#39;&#39;, &#39;&quot;@font-face {\\n  fon&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="data_preparation.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Fig 3: World-map and line-graph – Total GHG-Emissions by country</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="data_excel.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Styling</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Durch Sophia Engstler<br/>
+        
+            &copy; Urheberrechte © 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
