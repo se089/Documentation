@@ -2,8 +2,10 @@
 ## Allgemein
 Um ein einheitliches Erscheinungsbild zu erhalten, habe ich zu Beginn ein Farbschema und Schriftarten definiert. Das Farbschema sollte die Themen Landwirtschaft, Lebensmittel und Nachhaltigkeit widerspiegeln. Gleichzeitig sollte es sich auch am Design von Fridays for future orientieren, damit sich das Logo der Organisation besser integriert. Da die Farben hauptsächlich zur Auszeichnung in den Grafiken verwendet wurden, war es zudem wichtig, dass sie sich deutlich voneinander unterschieden. Deswegen entschied ich mich für bunte, aber dennoch gedeckte Farben, da diese natürlich und seriöser wirken. 
 Die gewählten Schriftarten Montserrat und Roboto sind sowohl online als auch im Print gut lesbar und wirken modern.
+
 ## Dashboard
 Das Dashboard ist in drei Tabs untergliedert. Diese unterscheiden sich thematisch und folgen dem Aufbau der Storyline. Im 1. Reiter befinden sich die Grafiken zum Umwelteinfluss der gesamten Lebensmittelindustrie mit Fokus auf die Treibhausgasemissionen. Reiter 2 geht eine Ebene tiefer und zeigt den Umwelteinfluss einzelner Lebensmittel. Der Vergleich verschiedener Ernährungsweisen ist in Reiter 3 dargestellt.
+
 ## Report
 Der Report folgt ebenfalls dem Ablauf der Story und zeigt die Grafiken in derselben Reihenfolge wie das Dashboard. Zu jeder Grafik sind zusätzliche Informationen in Textform eingefügt. Passend zu den Inhalten in der Grafik sind bestimmte Passagen im Text farbig markiert.
 

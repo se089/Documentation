@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data Preparation" href="data_preparation.html" />
+    <link rel="next" title="Data Preparation - Code" href="data_preparation.html" />
     <link rel="prev" title="Vorgehen" href="steps.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -253,8 +253,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Vorbereitung der Daten
+  <a class="reference internal nav-link" href="#data-pre-processing">
+   Data Pre-Processing
   </a>
  </li>
 </ul>
@@ -274,9 +274,9 @@
 <h2>Sammeln der Daten<a class="headerlink" href="#sammeln-der-daten" title="Permalink to this headline">¶</a></h2>
 <p>Wie bereits erwähnt wurden auf <a class="reference external" href="http://Ourworldindata.org">Ourworldindata.org</a> zahlreiche Datensätze als CSV-Download zum Thema angeboten. Des Weiteren bot die Seite bereits Inspiration, wie die Daten visualisiert werden könnten. Dies erleichterte die Suche nach Daten. In Ausnahmefällen (Abbildung 1.1 und 1.2) habe ich Informationen, die nicht als Datensatz angeboten wurden, aus Grafiken abgetippt, um diese in meinem Dashboard und Report zu verwenden.</p>
 </div>
-<div class="section" id="id1">
-<h2>Vorbereitung der Daten<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Da jede Grafik ein anderes Themengebiet abdeckte, wurde für jede Grafik ein eigener Datensatz erstellt. Dafür mussten die ursprünglichen Datensätze teilweise zusammengefasstoder gefiltert werden. In diesem Schritt wurde auch eine explorative Datenanalyse durchgeführt, um die Daten zu validieren und Ausnahmefälle zu identifizieren. Zum Beispiel wurden in den Datensätzen für Abbildung 1.3 nicht nur alle Treibhausgasemissionen für alle Länder weltweit festgehalten, sondern es gab auch Zeilen, die die Werte für die gesamte Welt, alle Industriestaaten oder alle Entwicklungsländer zusammenfassten. Diese mussten ausgeschlossen werden, da diese zu falschen Min- und Max-Werten in der Farbskala geführt hätten. Das Python Notebook zum Data Preprocessing befindet sich <a class="reference external" href="https://se089.github.io/Documentation/data_preparation.html">hier</a>.</p>
+<div class="section" id="data-pre-processing">
+<h2>Data Pre-Processing<a class="headerlink" href="#data-pre-processing" title="Permalink to this headline">¶</a></h2>
+<p>Da jede Grafik ein anderes Themengebiet abdeckte, wurde für jede Grafik ein eigener Datensatz erstellt. Dafür mussten die ursprünglichen Datensätze teilweise zusammengefasst oder gefiltert werden. In diesem Schritt wurde auch eine explorative Datenanalyse durchgeführt, um die Daten zu validieren und Ausnahmefälle zu identifizieren. Zum Beispiel wurden in den Datensätzen für Abbildung 1.3 nicht nur alle Treibhausgasemissionen für alle Länder weltweit festgehalten, sondern es gab auch Zeilen, die die Werte für die gesamte Welt, alle Industriestaaten oder alle Entwicklungsländer zusammenfassten. Diese mussten ausgeschlossen werden, da diese zu falschen Min- und Max-Werten in der Farbskala geführt hätten. Das Python Notebook zum Data Preprocessing befindet sich <a class="reference external" href="https://se089.github.io/Documentation/data_preparation.html">hier</a>.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -324,7 +324,7 @@
         <a class="right-next" href="data_preparation.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Data Preparation</p>
+                <p class="prevnext-title">Data Preparation - Code</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

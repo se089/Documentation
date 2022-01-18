@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Preparation &#8212; Data Storytelling - Dokumentation</title>
+    <title>Data Preparation - Code &#8212; Data Storytelling - Dokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -264,111 +264,104 @@
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Data Preparation
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
    Fig 3: World-map and line-graph – Total GHG-Emissions by country
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#merge-with-total-ghg-sum">
      Merge with total ghg sum
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#translate-country-names">
      Translate Country names
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#correct-missing-values-in-translated-column-names">
-       Correct missing values in translated column names
-      </a>
-     </li>
-    </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#correct-missing-values-in-translated-column-names">
+     Correct missing values in translated column names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#export-to-csv">
      Export to csv
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#fig-4-environmental-impact-of-single-foods-scatterplot">
    Fig 4: Environmental impact of single foods - Scatterplot
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#merge-datasets">
      Merge Datasets
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#drop-and-rename-columns">
      Drop and rename columns
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#check-missing-values">
      Check missing values
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-new-columns">
      Create new columns
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#category-of-food">
        Category of food
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#testing-how-to-create-automated-list-for-checkboxes">
      Testing how to create automated list for checkboxes
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id1">
      Export to csv
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
    Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-preparation">
      Data preparation
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#filter-data">
      Filter Data
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#bring-data-into-necessary-form">
      Bring data into necessary form
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#translate-countries-to-german">
      Translate countries to german
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
      Export to csv
     </a>
    </li>
@@ -385,7 +378,9 @@
         
               <div>
                 
-  <div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-preparation-code">
+<h1>Data Preparation - Code<a class="headerlink" href="#data-preparation-code" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -401,24 +396,73 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_6078</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_6684</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span> 
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;plotly.express&#39;
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">jbook</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">plotly</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span> <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> 
+<span class="ne">---&gt; </span><span class="mi">31</span> <span class="kn">from</span> <span class="nn">plotly</span> <span class="kn">import</span> <span class="p">(</span><span class="n">plotly</span><span class="p">,</span> <span class="n">dashboard_objs</span><span class="p">,</span> <span class="n">graph_objs</span><span class="p">,</span> <span class="n">grid_objs</span><span class="p">,</span> <span class="n">tools</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span>                     <span class="n">utils</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">offline</span><span class="p">,</span> <span class="n">colors</span><span class="p">,</span> <span class="n">io</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="kn">from</span> <span class="nn">plotly.version</span> <span class="kn">import</span> <span class="n">__version__</span>
+
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">jbook</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">plotly</span><span class="o">/</span><span class="n">plotly</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> 
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">10</span><span class="s2"> from . plotly import (</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span><span class="s2">     sign_in,</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span><span class="s2">     update_plot_options,</span>
+
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/plotly/plotly.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span><span class="s2"> from plotly.plotly import chunked_requests</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span><span class="s2"> </span>
+<span class="ne">---&gt; </span><span class="mi">35</span><span class="s2"> from plotly.graph_objs import Scatter</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span><span class="s2"> from plotly.grid_objs import Grid, Column</span>
+
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from plotly.graph_objs import table</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from ._surface import Surface</span>
+<span class="ne">----&gt; </span><span class="mi">6</span><span class="s2"> from plotly.graph_objs import surface</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> from ._streamtube import Streamtube</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> from plotly.graph_objs import streamtube</span>
+
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/surface/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from plotly.graph_objs.surface import hoverlabel</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> from ._contours import Contours</span>
+<span class="ne">----&gt; </span><span class="mi">7</span><span class="s2"> from plotly.graph_objs.surface import contours</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> from ._colorbar import ColorBar</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2"> from plotly.graph_objs.surface import colorbar</span>
+
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/surface/contours/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from plotly.graph_objs.surface.contours import y</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from ._x import X</span>
+<span class="ne">----&gt; </span><span class="mi">6</span><span class="s2"> from plotly.graph_objs.surface.contours import x</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap.py</span> in <span class="ni">_find_and_load</span><span class="nt">(name, import_)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap.py</span> in <span class="ni">_find_and_load_unlocked</span><span class="nt">(name, import_)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap.py</span> in <span class="ni">_load_unlocked</span><span class="nt">(spec)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap_external.py</span> in <span class="ni">exec_module</span><span class="nt">(self, module)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap_external.py</span> in <span class="ni">get_code</span><span class="nt">(self, fullname)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap_external.py</span> in <span class="ni">get_data</span><span class="nt">(self, path)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="data-preparation">
-<h1>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
-<h1>Fig 3: World-map and line-graph – Total GHG-Emissions by country<a class="headerlink" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
+<h2>Fig 3: World-map and line-graph – Total GHG-Emissions by country<a class="headerlink" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import multiple dataframes: total and relative ghg-emissions of the food industry and ghg emissions in total (all industries/households)</span>
@@ -755,7 +799,7 @@
 </div>
 </div>
 <div class="section" id="merge-with-total-ghg-sum">
-<h2>Merge with total ghg sum<a class="headerlink" href="#merge-with-total-ghg-sum" title="Permalink to this headline">¶</a></h2>
+<h3>Merge with total ghg sum<a class="headerlink" href="#merge-with-total-ghg-sum" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#merge food industry dataframe with total ghg-emissions for each country</span>
@@ -1067,7 +1111,7 @@
 </div>
 </div>
 <div class="section" id="translate-country-names">
-<h2>Translate Country names<a class="headerlink" href="#translate-country-names" title="Permalink to this headline">¶</a></h2>
+<h3>Translate Country names<a class="headerlink" href="#translate-country-names" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read translation list of countries</span>
@@ -1278,6 +1322,7 @@ dtype: int64
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop columns with missing code, which are not needed in our plots</span>
 <span class="n">df_world_de</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Faroe Islands&#39;</span><span class="p">,</span> <span class="s1">&#39;International aviation&#39;</span><span class="p">,</span> <span class="s1">&#39;International shipping&#39;</span><span class="p">,</span> <span class="s1">&#39;Micronesia&#39;</span><span class="p">,</span> <span class="s1">&#39;Swaziland&#39;</span><span class="p">,</span> <span class="s1">&#39;Timor-Leste&#39;</span><span class="p">]</span> <span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -2181,9 +2226,8 @@ dtype: int64
 </div></div></div>
 </div>
 </div>
-</div>
 <div class="section" id="export-to-csv">
-<h2>Export to csv<a class="headerlink" href="#export-to-csv" title="Permalink to this headline">¶</a></h2>
+<h3>Export to csv<a class="headerlink" href="#export-to-csv" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Data for Worldmap</span>
@@ -2194,8 +2238,8 @@ dtype: int64
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="fig-4-environmental-impact-of-single-foods-scatterplot">
-<h1>Fig 4: Environmental impact of single foods - Scatterplot<a class="headerlink" href="#fig-4-environmental-impact-of-single-foods-scatterplot" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fig-4-environmental-impact-of-single-foods-scatterplot">
+<h2>Fig 4: Environmental impact of single foods - Scatterplot<a class="headerlink" href="#fig-4-environmental-impact-of-single-foods-scatterplot" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the datasets for environmental impact of different products</span>
@@ -2207,7 +2251,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="merge-datasets">
-<h2>Merge Datasets<a class="headerlink" href="#merge-datasets" title="Permalink to this headline">¶</a></h2>
+<h3>Merge Datasets<a class="headerlink" href="#merge-datasets" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set_index to merge datasets into one</span>
@@ -2740,7 +2784,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="drop-and-rename-columns">
-<h2>Drop and rename columns<a class="headerlink" href="#drop-and-rename-columns" title="Permalink to this headline">¶</a></h2>
+<h3>Drop and rename columns<a class="headerlink" href="#drop-and-rename-columns" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop duplicate columns</span>
@@ -2851,7 +2895,7 @@ memory usage: 2.2+ KB
 </div>
 </div>
 <div class="section" id="check-missing-values">
-<h2>Check missing values<a class="headerlink" href="#check-missing-values" title="Permalink to this headline">¶</a></h2>
+<h3>Check missing values<a class="headerlink" href="#check-missing-values" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_impact</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -2869,9 +2913,9 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="create-new-columns">
-<h2>Create new columns<a class="headerlink" href="#create-new-columns" title="Permalink to this headline">¶</a></h2>
+<h3>Create new columns<a class="headerlink" href="#create-new-columns" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="category-of-food">
-<h3>Category of food<a class="headerlink" href="#category-of-food" title="Permalink to this headline">¶</a></h3>
+<h4>Category of food<a class="headerlink" href="#category-of-food" title="Permalink to this headline">¶</a></h4>
 <p>In order to better compare the different food groups, 7 more labels are added according to the nutrition pyramide: drinks, plant products, cereal, Dairy products and eggs, meat, oil and fats, sweets. This assignment has to be done manually as the range of products is very wide.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3207,7 +3251,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="testing-how-to-create-automated-list-for-checkboxes">
-<h2>Testing how to create automated list for checkboxes<a class="headerlink" href="#testing-how-to-create-automated-list-for-checkboxes" title="Permalink to this headline">¶</a></h2>
+<h3>Testing how to create automated list for checkboxes<a class="headerlink" href="#testing-how-to-create-automated-list-for-checkboxes" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create List with Dictionaries to create checkbox options automatically</span>
@@ -3224,7 +3268,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="id1">
-<h2>Export to csv<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h3>Export to csv<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data for Figure: Impact of single foods - Scatterplot</span>
@@ -3235,10 +3279,10 @@ dtype: int64
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
-<h1>Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet<a class="headerlink" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>Data preparation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
+<h2>Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet<a class="headerlink" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-preparation">
+<h3>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import data</span>
@@ -3258,7 +3302,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="filter-data">
-<h2>Filter Data<a class="headerlink" href="#filter-data" title="Permalink to this headline">¶</a></h2>
+<h3>Filter Data<a class="headerlink" href="#filter-data" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Float values are Gramm</span>
@@ -3420,7 +3464,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="bring-data-into-necessary-form">
-<h2>Bring data into necessary form<a class="headerlink" href="#bring-data-into-necessary-form" title="Permalink to this headline">¶</a></h2>
+<h3>Bring data into necessary form<a class="headerlink" href="#bring-data-into-necessary-form" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Bring data into necessary form</span>
@@ -4047,7 +4091,7 @@ dtype: int64
 </div>
 </div>
 <div class="section" id="translate-countries-to-german">
-<h2>Translate countries to german<a class="headerlink" href="#translate-countries-to-german" title="Permalink to this headline">¶</a></h2>
+<h3>Translate countries to german<a class="headerlink" href="#translate-countries-to-german" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Translation list from previous plot</span>
@@ -4182,13 +4226,14 @@ dtype: int64
 </div>
 </div>
 </div>
-<div class="section" id="id3">
-<h2>Export to csv<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Export to csv<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data for comparison of different countries with diet recommended by EAT-Lancet</span>
 <span class="c1">#df_diet_for.to_csv(&#39;fig5_diets.csv&#39;, encoding=&#39;utf-8-sig&#39;, index=False)</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
