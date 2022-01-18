@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Fig 3: World-map and line-graph – Total GHG-Emissions by country" href="data_preparation.html" />
+    <link rel="next" title="Vorbereitung der Daten" href="data.html" />
     <link rel="prev" title="Projektdokumentation" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -104,25 +104,49 @@
    Projektplanung
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_preparation.html">
-   Fig 3: World-map and line-graph – Total GHG-Emissions by country
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="data.html">
+   Vorbereitung der Daten
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_preparation.html">
+     Data Preparation
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="report_pdf.html">
-   Preparation
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="results.html">
+   Erstellung der Projektergebnisse
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_excel.html">
-   Styling
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="report_pdf.html">
+     Report
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_excel.html">
+     Excel Report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  Aufbau der Story
+  Story
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -131,13 +155,6 @@
    Story
   </a>
  </li>
-</ul>
-<p class="caption" role="heading">
- <span class="caption-text">
-  Gestaltung
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="design.html">
    Design
@@ -239,40 +256,6 @@
   <a class="reference internal nav-link" href="#themenrecherche">
    Themenrecherche
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sammeln-der-daten">
-     Sammeln der Daten
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vorbereitung-der-daten">
-     Vorbereitung der Daten
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#erstellung-der-projektergebnisse">
-   Erstellung der Projektergebnisse
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#grafiken-und-dashboard">
-     Grafiken und Dashboard
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#report">
-     Report
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exceldaten">
-     Exceldaten
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -289,34 +272,24 @@
 <h1>Vorgehen<a class="headerlink" href="#vorgehen" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="projektplanung">
 <h2>Projektplanung<a class="headerlink" href="#projektplanung" title="Permalink to this headline">¶</a></h2>
-<p>Um eine Übersicht über die benötigten Schritte zu erhalten und diese parallel zu anderen Projekten zeitlich einzuordnen, erstellte ich zunächst eine Übersicht, welche Schritte bis zum Ziel des Projekts benötigt wurden. Dazu gehörte nach einer intensiven Auseinandersetzung mit dem Thema, die Definition des Ziels und die Entwicklung der Storyline. In diesem Zuge wollte ich mir überlegen, welche Daten ich benötige und wie ich diese visualisieren möchte. Anschließend plante ich die Grafiken zu erstellen und in Form eines interaktiven Dashboards und PDF-Report zu bringen. Abschließend wollte ich mich mit der Präsentation und dem Export der verwendeten Daten als Excel beschäftigen.</p>
+<p>Um eine Übersicht über die benötigten Schritte zu erhalten und diese parallel zu anderen Projekten zeitlich einzuordnen, erstellte ich zunächst eine Übersicht, welche Schritte bis zum Ziel des Projekts benötigt wurden. Dazu gehörte:</p>
+<ol class="simple">
+<li><p>Themenrecherche</p></li>
+<li><p>Intensive Auseinandersetzung mit dem Thema</p></li>
+<li><p>Definition des Ziels</p></li>
+<li><p>Suche nach Daten und Vorbereitung der Daten</p></li>
+<li><p>Entwicklung der Storyline</p></li>
+<li><p>Visualisierung der Daten</p></li>
+<li><p>Erstellung des Dashboards</p></li>
+<li><p>Erstellung des PDF- und Excel-Reports</p></li>
+<li><p>Erstellung der Präsentation</p></li>
+</ol>
 </div>
 <div class="section" id="themenrecherche">
 <h2>Themenrecherche<a class="headerlink" href="#themenrecherche" title="Permalink to this headline">¶</a></h2>
-<p>Um zunächst ein Thema für das Projekt zu finden, habe ich aktuelle Studien informiert. Dafür nutzte ich v.a. Websites oder Blogs wie Statista, Informationisbeautiful oder Ourworldindata. Da ich parallel auf der Suche nach einem Thema für meine Bachelor Thesis war, habe ich versucht, ein Thema zu finden, dass ich sowohl für das Projekt als auch für die Abschlussarbeit nutzen könnte. Aus persönlichem Interesse habe ich mich vermehrt mit den Bereichen E-Commerce, Umweltschutz und Ernährung auseinander gesetzt. Je mehr ich mich damit auseinandersetzte, merkte ich, dass sich diese Themen auch gut miteinander kombinieren ließen und habe einige Studien dazu gelesen. Daraus entwickelte sich zunächst die Idee, das Potenzial eines Online-Lebensmittelshop für eine Supermarktkette aufzuzeigen. Aufgrund der mangelnden Datenlage entschied ich mich dann jedoch dagegen und entdeckte mehrere Artikel von Hannah Mitchell, die sich intensiv mit dem Umwelteinfluss der Lebensmittelindustrie beschäftigt. Auf <a class="reference external" href="http://Ourworldindata.org">Ourworldindata.org</a> wurden die Daten der dort verwendeten Grafiken auch jeweils als Download zur Verfügung gestellt. Nach Sichten weiterer Quellen entschied ich mich deswegen für die Fragestellung, wieso wir weniger Fleisch essen sollten, um den Klimawandel zu bekämpfen. Anschließend entwickelte ich eine Story, wie ich dieses Ziel erreichen wollte. Diese findet sich <a class="reference external" href="https://se089.github.io/Documentation/story.html">hier</a>.</p>
-<div class="section" id="sammeln-der-daten">
-<h3>Sammeln der Daten<a class="headerlink" href="#sammeln-der-daten" title="Permalink to this headline">¶</a></h3>
-<p>Wie bereits erwähnt wurden auf <a class="reference external" href="http://Ourworldindata.org">Ourworldindata.org</a> zahlreiche Datensätze als CSV-Download zum Thema angeboten. Des Weiteren bot die Seite bereits Inspiration, wie die Daten visualisiert werden könnten. Dies erleichterte die Suche nach Daten. In Ausnahmefällen (Abbildung 1.1 und 1.2) habe ich Informationen, die nicht als Datensatz angeboten wurden, aus Grafiken abgetippt, um diese in meinem Dashboard und Report zu verwenden.</p>
-</div>
-<div class="section" id="vorbereitung-der-daten">
-<h3>Vorbereitung der Daten<a class="headerlink" href="#vorbereitung-der-daten" title="Permalink to this headline">¶</a></h3>
-<p>Da jede Grafik ein anderes Themengebiet abdeckte, wurde für jede Grafik ein eigener Datensatz erstellt. Dafür mussten die ursprünglichen Datensätze teilweise zusammengefasstoder gefiltert werden. In diesem Schritt wurde auch eine explorative Datenanalyse durchgeführt, um die Daten zu validieren und Ausnahmefälle zu identifizieren. Zum Beispiel wurden in den Datensätzen für Abbildung 1.3 nicht nur alle Treibhausgasemissionen für alle Länder weltweit festgehalten, sondern es gab auch Zeilen, die die Werte für die gesamte Welt, alle Industriestaaten oder alle Entwicklungsländer zusammenfassten. Diese mussten ausgeschlossen werden, da diese zu falschen Min- und Max-Werten in der Farbskala geführt hätten. Das Python Notebook zum Data Preprocessing findet sich hier.</p>
-</div>
-</div>
-<div class="section" id="erstellung-der-projektergebnisse">
-<h2>Erstellung der Projektergebnisse<a class="headerlink" href="#erstellung-der-projektergebnisse" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="grafiken-und-dashboard">
-<h3>Grafiken und Dashboard<a class="headerlink" href="#grafiken-und-dashboard" title="Permalink to this headline">¶</a></h3>
-<p>Ich entschied mich dazu, die Grafiken und das Dashboard parallel zu erstellen, um die Grafiken gleich mit Animation und Interaktivität testen zu können. Beim Aufbau orientierte ich mich an der Storyline. Als Hilfestellung nutzte ich hauptsächlich die ausführliche Dokumentation von Plotly und Dash. Nachdem das grobe Gerüst des Dashboards und die Basis für jede Abbildung stand, optimierte ich die Gestaltung der Grafiken entsprechend der Designprinzipien.</p>
-</div>
-<div class="section" id="report">
-<h3>Report<a class="headerlink" href="#report" title="Permalink to this headline">¶</a></h3>
-<p>Nachdem alle Grafiken erstellt und bereits gestaltet waren, begann ich mit der Erstellung des Reports. Dafür erstellte ich zunächst ein grobes HTML-Template und formulierte Texte zur Erklärung der Grafiken. Interaktive Grafiken (1.3, 2.1 und 3.1) habe ich entsprechend gefiltert und Hovertexte in Annotationen umgewandelt. Alle Plots wurden als statisches Bild gespeichert. Die Texte wurden über das HTML-Template gerendert und somit eine HTML-Seite erstellt. Abschließend wurde dieser Report in eine PDF konvertiert. Das Python Notebook zur Erstellung des Reports befindet sich hier.</p>
-</div>
-<div class="section" id="exceldaten">
-<h3>Exceldaten<a class="headerlink" href="#exceldaten" title="Permalink to this headline">¶</a></h3>
-<p>Für die Exceldaten wurden alle vorbereiteten Datensätze in ein Python Notebook geladen und mittels XLSRwriter eine Excel erstellt, in der jeder Datensatz einen eigenen Reiter erhielt. Zudem habe ich einige Formatierungen (z.B. Titel, Spaltenbreite, Zahlenformatierung) vorgenommen, um die Daten besser lesbar zu machen. Das Python Notebook zur Erstellung der Excel-Datei befindet sich hier.</p>
-</div>
+<p>Um zunächst ein Thema für das Projekt zu finden, habe ich mich über aktuelle Studien informiert. Dafür nutzte ich v.a. Websites oder Blogs wie Statista, Informationisbeautiful oder Ourworldindata. Da ich parallel auf der Suche nach einem Thema für meine Bachelor Thesis war, habe ich versucht, ein Thema zu finden, das ich sowohl für das Projekt als auch für die Abschlussarbeit nutzen könnte.</p>
+<p>Aus persönlichem Interesse habe ich mich vermehrt mit den Bereichen E-Commerce, Umweltschutz und Ernährung auseinander gesetzt. Je mehr ich mich damit auseinandersetzte, merkte ich, dass sich diese Themen auch gut miteinander kombinieren ließen und habe einige Studien dazu gelesen. Daraus entwickelte sich zunächst die Idee, das Potenzial eines Online-Lebensmittelshop für eine Supermarktkette aufzuzeigen. Aufgrund der mangelnden Datenlage entschied ich mich dann jedoch dagegen und entdeckte mehrere Artikel von Hannah Mitchell, die sich intensiv mit dem Umwelteinfluss der Lebensmittelindustrie beschäftigt. Auf <a class="reference external" href="http://Ourworldindata.org">Ourworldindata.org</a> wurden die Daten der dort verwendeten Grafiken auch jeweils als Download zur Verfügung gestellt.</p>
+<p>Nach Sichten weiterer Quellen entschied ich mich deswegen für die Fragestellung, wieso wir weniger Fleisch essen sollten, um den Klimawandel zu bekämpfen. Anschließend entwickelte ich eine Story, wie ich dieses Ziel erreichen wollte. Diese findet sich <a class="reference external" href="https://se089.github.io/Documentation/story.html">hier</a>.</p>
 </div>
 </div>
 
@@ -359,10 +332,10 @@
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="data_preparation.html" title="next page">
+        <a class="right-next" href="data.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Fig 3: World-map and line-graph – Total GHG-Emissions by country</p>
+                <p class="prevnext-title">Vorbereitung der Daten</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

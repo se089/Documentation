@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fig 3: World-map and line-graph – Total GHG-Emissions by country &#8212; Data Storytelling - Dokumentation</title>
+    <title>Data Preparation &#8212; Data Storytelling - Dokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Preparation" href="report_pdf.html" />
-    <link rel="prev" title="Vorgehen" href="steps.html" />
+    <link rel="next" title="Erstellung der Projektergebnisse" href="results.html" />
+    <link rel="prev" title="Vorbereitung der Daten" href="data.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -104,25 +104,49 @@
    Projektplanung
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Fig 3: World-map and line-graph – Total GHG-Emissions by country
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="data.html">
+   Vorbereitung der Daten
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Data Preparation
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="report_pdf.html">
-   Preparation
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="results.html">
+   Erstellung der Projektergebnisse
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_excel.html">
-   Styling
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="report_pdf.html">
+     Report
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_excel.html">
+     Excel Report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p class="caption" role="heading">
  <span class="caption-text">
-  Aufbau der Story
+  Story
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -131,13 +155,6 @@
    Story
   </a>
  </li>
-</ul>
-<p class="caption" role="heading">
- <span class="caption-text">
-  Gestaltung
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="design.html">
    Design
@@ -249,6 +266,11 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
+   Data Preparation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
    Fig 3: World-map and line-graph – Total GHG-Emissions by country
   </a>
   <ul class="visible nav section-nav flex-column">
@@ -326,7 +348,7 @@
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-preparation">
+    <a class="reference internal nav-link" href="#id2">
      Data preparation
     </a>
    </li>
@@ -346,7 +368,7 @@
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
+    <a class="reference internal nav-link" href="#id3">
      Export to csv
     </a>
    </li>
@@ -380,26 +402,29 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_4009</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_6078</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span> 
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;plotly&#39;
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;plotly.express&#39;
 </pre></div>
 </div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="data-preparation">
+<h1>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
 <h1>Fig 3: World-map and line-graph – Total GHG-Emissions by country<a class="headerlink" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import multiple dataframes: total and relative ghg-emissions of the food industry and ghg emissions in total (all industries/households)</span>
-<span class="n">df_world_food_total</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/b_Weltkarte_emissions-from-food.csv&#39;</span><span class="p">)</span>
-<span class="n">df_world_food_share</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/a_Weltkarte_share-global-food-emissions.csv&#39;</span><span class="p">)</span>
-<span class="n">df_world_total</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/total-ghg-emissions.csv&#39;</span><span class="p">)</span>
+<span class="n">df_world_food_total</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/b_Weltkarte_emissions-from-food.csv&#39;</span><span class="p">)</span>
+<span class="n">df_world_food_share</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/a_Weltkarte_share-global-food-emissions.csv&#39;</span><span class="p">)</span>
+<span class="n">df_world_total</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/total-ghg-emissions.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1046,7 +1071,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read translation list of countries</span>
-<span class="n">countries</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/countries.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/countries.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
 <span class="n">countries</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -2162,7 +2187,7 @@ dtype: int64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Data for Worldmap</span>
-<span class="n">df_world_de</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;fig3_global_ghg_emissions.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1">#df_world_de.to_csv(&#39;fig3_global_ghg_emissions.csv&#39;, encoding=&#39;utf-8-sig&#39;, index=False)</span>
 </pre></div>
 </div>
 </div>
@@ -2174,9 +2199,9 @@ dtype: int64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the datasets for environmental impact of different products</span>
-<span class="n">df_ghg</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/ghg-kcal-poore.csv&#39;</span><span class="p">)</span>
-<span class="n">df_freshwater</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/freshwater-kcal-poore.csv&#39;</span><span class="p">)</span>
-<span class="n">df_land</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/land-use-kcal-poore.csv&#39;</span><span class="p">)</span>
+<span class="n">df_ghg</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/ghg-kcal-poore.csv&#39;</span><span class="p">)</span>
+<span class="n">df_freshwater</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/freshwater-kcal-poore.csv&#39;</span><span class="p">)</span>
+<span class="n">df_land</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/land-use-kcal-poore.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3203,7 +3228,7 @@ dtype: int64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data for Figure: Impact of single foods - Scatterplot</span>
-<span class="n">df_impact</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;fig4_effect_of_different_foods.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>
+<span class="c1">#df_impact.to_csv(&#39;fig4_effect_of_different_foods.csv&#39;, encoding=&#39;utf-8-sig&#39;)</span>
 </pre></div>
 </div>
 </div>
@@ -3212,12 +3237,12 @@ dtype: int64
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
 <h1>Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet<a class="headerlink" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="data-preparation">
-<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h2>Data preparation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import data</span>
-<span class="n">df_diet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;original_data/eat-lancet-diet-comparison.csv&#39;</span><span class="p">)</span>
+<span class="n">df_diet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Dashboard/original_data/eat-lancet-diet-comparison.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4157,12 +4182,12 @@ dtype: int64
 </div>
 </div>
 </div>
-<div class="section" id="id2">
-<h2>Export to csv<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>Export to csv<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data for comparison of different countries with diet recommended by EAT-Lancet</span>
-<span class="n">df_diet_for</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;fig5_diets.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1">#df_diet_for.to_csv(&#39;fig5_diets.csv&#39;, encoding=&#39;utf-8-sig&#39;, index=False)</span>
 </pre></div>
 </div>
 </div>
@@ -4200,19 +4225,19 @@ dtype: int64
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="steps.html" title="previous page">
+        <a class="left-prev" href="data.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Vorgehen</p>
+                <p class="prevnext-title">Vorbereitung der Daten</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="report_pdf.html" title="next page">
+        <a class="right-next" href="results.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Preparation</p>
+                <p class="prevnext-title">Erstellung der Projektergebnisse</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
