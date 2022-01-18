@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Data Storytelling - Dokumentation</title>
+    <title>Erstellung der Projektergebnisse &#8212; Data Storytelling - Dokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -42,8 +42,17 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preparation" href="report_pdf.html" />
+    <link rel="prev" title="Fig 3: World-map and line-graph – Total GHG-Emissions by country" href="data_preparation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,7 +98,7 @@
   Vorgehen
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="steps.html">
    Projektplanung
@@ -112,11 +121,11 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="results.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Erstellung der Projektergebnisse
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
@@ -184,6 +193,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/results.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -195,7 +221,7 @@
                 data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
                     class="fab fa-github"></i>Repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fresults.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
         
@@ -216,6 +242,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafiken-und-dashboard">
+   Grafiken und Dashboard
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#report">
+   Report
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exceldaten">
+   Exceldaten
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -224,13 +273,43 @@
         
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="tex2jax_ignore mathjax_ignore section" id="erstellung-der-projektergebnisse">
+<h1>Erstellung der Projektergebnisse<a class="headerlink" href="#erstellung-der-projektergebnisse" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="grafiken-und-dashboard">
+<h2>Grafiken und Dashboard<a class="headerlink" href="#grafiken-und-dashboard" title="Permalink to this headline">¶</a></h2>
+<p>Ich entschied mich dazu, die Grafiken und das Dashboard parallel zu erstellen, um die Grafiken gleich mit Animation und Interaktivität testen zu können. Beim Aufbau orientierte ich mich an der Storyline. Als Hilfestellung nutzte ich hauptsächlich die ausführliche Dokumentation von Plotly und Dash. Nachdem das grobe Gerüst des Dashboards und die Basis für jede Abbildung stand, optimierte ich die Gestaltung der Grafiken entsprechend der Designprinzipien.</p>
+</div>
+<div class="section" id="report">
+<h2>Report<a class="headerlink" href="#report" title="Permalink to this headline">¶</a></h2>
+<p>Nachdem alle Grafiken erstellt und bereits gestaltet waren, begann ich mit der Erstellung des Reports. Dafür erstellte ich zunächst ein grobes HTML-Template und formulierte Texte zur Erklärung der Grafiken. Interaktive Grafiken (1.3, 2.1 und 3.1) habe ich entsprechend gefiltert und Hovertexte in Annotationen umgewandelt. Alle Plots wurden als statisches Bild gespeichert. Die Texte wurden über das HTML-Template gerendert und somit eine HTML-Seite erstellt. Abschließend wurde dieser Report in eine PDF konvertiert. Das Python Notebook zur Erstellung des Reports befindet sich hier.</p>
+</div>
+<div class="section" id="exceldaten">
+<h2>Exceldaten<a class="headerlink" href="#exceldaten" title="Permalink to this headline">¶</a></h2>
+<p>Für die Exceldaten wurden alle vorbereiteten Datensätze in ein Python Notebook geladen und mittels XLSRwriter eine Excel erstellt, in der jeder Datensatz einen eigenen Reiter erhielt. Zudem habe ich einige Formatierungen (z.B. Titel, Spaltenbreite, Zahlenformatierung) vorgenommen, um die Daten besser lesbar zu machen. Das Python Notebook zur Erstellung der Excel-Datei befindet sich hier.</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -241,6 +320,24 @@
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="data_preparation.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Fig 3: World-map and line-graph – Total GHG-Emissions by country</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="report_pdf.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Preparation</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
         
