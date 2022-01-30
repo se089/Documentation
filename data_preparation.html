@@ -133,12 +133,12 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="report_pdf.html">
-     Report
+     Preparation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="data_excel.html">
-     Excel Report
+     Styling
     </a>
    </li>
   </ul>
@@ -265,8 +265,8 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
-   Fig 3: World-map and line-graph – Total GHG-Emissions by country
+  <a class="reference internal nav-link" href="#fig-1-3-world-map-and-line-graph-total-ghg-emissions-by-country">
+   Fig 1.3: World-map and line-graph – Total GHG-Emissions by country
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -292,8 +292,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fig-4-environmental-impact-of-single-foods-scatterplot">
-   Fig 4: Environmental impact of single foods - Scatterplot
+  <a class="reference internal nav-link" href="#fig-2-1-environmental-impact-of-single-foods-scatterplot">
+   Fig 2.1: Environmental impact of single foods - Scatterplot
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -336,8 +336,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
-   Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet
+  <a class="reference internal nav-link" href="#fig-3-1-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
+   Fig 3.1: Comparison of different diets to the diet recommended by EAT-Lancet
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -397,7 +397,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_6684</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_36426</span><span class="o">/</span><span class="mf">1949892139.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
@@ -426,23 +426,30 @@
 <span class="g g-Whitespace">     </span><span class="mi">37</span><span class="s2"> from plotly.grid_objs import Grid, Column</span>
 
 <span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/__init__.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from plotly.graph_objs import table</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from ._surface import Surface</span>
-<span class="ne">----&gt; </span><span class="mi">6</span><span class="s2"> from plotly.graph_objs import surface</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> from ._streamtube import Streamtube</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> from plotly.graph_objs import streamtube</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="s2"> from plotly.graph_objs import area</span>
+<span class="g g-Whitespace">     </span><span class="mi">75</span><span class="s2"> from ._layout import Layout</span>
+<span class="ne">---&gt; </span><span class="mi">76</span><span class="s2"> from plotly.graph_objs import layout</span>
+<span class="g g-Whitespace">     </span><span class="mi">77</span><span class="s2"> from ._frame import Frame</span>
+<span class="g g-Whitespace">     </span><span class="mi">78</span><span class="s2"> from ._figure import Figure</span>
 
-<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/surface/__init__.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from plotly.graph_objs.surface import hoverlabel</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> from ._contours import Contours</span>
-<span class="ne">----&gt; </span><span class="mi">7</span><span class="s2"> from plotly.graph_objs.surface import contours</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> from ._colorbar import ColorBar</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2"> from plotly.graph_objs.surface import colorbar</span>
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/layout/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span><span class="s2"> from plotly.graph_objs.layout import ternary</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span><span class="s2"> from ._template import Template</span>
+<span class="ne">---&gt; </span><span class="mi">13</span><span class="s2"> from plotly.graph_objs.layout import template</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span><span class="s2"> from ._slider import Slider</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span><span class="s2"> from plotly.graph_objs.layout import slider</span>
 
-<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/surface/contours/__init__.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from plotly.graph_objs.surface.contours import y</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from ._x import X</span>
-<span class="ne">----&gt; </span><span class="mi">6</span><span class="s2"> from plotly.graph_objs.surface.contours import x</span>
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/layout/template/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span><span class="s2"> from ._layout import Layout</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s2"> from ._data import Data</span>
+<span class="ne">----&gt; </span><span class="mi">3</span><span class="s2"> from plotly.graph_objs.layout.template import data</span>
+
+<span class="s2">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/plotly/graph_objs/layout/template/data/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span><span class="s2"> from ._pointcloud import Pointcloud</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span><span class="s2"> from ._pie import Pie</span>
+<span class="ne">---&gt; </span><span class="mi">18</span><span class="s2"> from ._parcoords import Parcoords</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span><span class="s2"> from ._parcats import Parcats</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span><span class="s2"> from ._ohlc import Ohlc</span>
 
 <span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/importlib/_bootstrap.py</span> in <span class="ni">_find_and_load</span><span class="nt">(name, import_)</span>
 
@@ -461,8 +468,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="fig-3-world-map-and-line-graph-total-ghg-emissions-by-country">
-<h2>Fig 3: World-map and line-graph – Total GHG-Emissions by country<a class="headerlink" href="#fig-3-world-map-and-line-graph-total-ghg-emissions-by-country" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fig-1-3-world-map-and-line-graph-total-ghg-emissions-by-country">
+<h2>Fig 1.3: World-map and line-graph – Total GHG-Emissions by country<a class="headerlink" href="#fig-1-3-world-map-and-line-graph-total-ghg-emissions-by-country" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import multiple dataframes: total and relative ghg-emissions of the food industry and ghg emissions in total (all industries/households)</span>
@@ -2238,8 +2245,8 @@ dtype: int64
 </div>
 </div>
 </div>
-<div class="section" id="fig-4-environmental-impact-of-single-foods-scatterplot">
-<h2>Fig 4: Environmental impact of single foods - Scatterplot<a class="headerlink" href="#fig-4-environmental-impact-of-single-foods-scatterplot" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fig-2-1-environmental-impact-of-single-foods-scatterplot">
+<h2>Fig 2.1: Environmental impact of single foods - Scatterplot<a class="headerlink" href="#fig-2-1-environmental-impact-of-single-foods-scatterplot" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the datasets for environmental impact of different products</span>
@@ -3279,8 +3286,8 @@ dtype: int64
 </div>
 </div>
 </div>
-<div class="section" id="fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
-<h2>Fig 5: Comparison of different diets to the diet recommended by EAT-Lancet<a class="headerlink" href="#fig-5-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fig-3-1-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet">
+<h2>Fig 3.1: Comparison of different diets to the diet recommended by EAT-Lancet<a class="headerlink" href="#fig-3-1-comparison-of-different-diets-to-the-diet-recommended-by-eat-lancet" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="data-preparation">
 <h3>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
