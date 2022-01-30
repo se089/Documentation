@@ -1,15 +1,4 @@
 Traceback (most recent call last):
-  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 627, in _async_poll_for_reply
-    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))
-  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/util.py", line 89, in ensure_async
-    result = await obj
-  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/jupyter_client/channels.py", line 230, in get_msg
-    raise Empty
-_queue.Empty
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
     record_timing=False,
   File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 1117, in execute
@@ -22,16 +11,12 @@ Traceback (most recent call last):
     return future.result()
   File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 559, in async_execute
     cell, index, execution_count=self.code_cells_executed + 1
-  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 846, in async_execute_cell
-    exec_reply = await self.task_poll_for_reply
-  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 651, in _async_poll_for_reply
-    await self._async_handle_timeout(timeout, cell)
-  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 702, in _async_handle_timeout
-    "Cell execution timed out", timeout, cell
-nbclient.exceptions.CellTimeoutError: A cell timed out while it was being executed, after 30 seconds.
-The message was: Cell execution timed out.
-Here is a preview of the cell contents:
--------------------
+  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 862, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 765, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
 %matplotlib inline
 import pandas as pd
 import numpy as np
@@ -41,5 +26,17 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 sns.set_theme(style="ticks", color_codes=True)
--------------------
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_36776/1949892139.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      4[0m [0;32mimport[0m [0mmatplotlib[0m[0;34m.[0m[0mpyplot[0m [0;32mas[0m [0mplt[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0;32mimport[0m [0mseaborn[0m [0;32mas[0m [0msns[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 6[0;31m [0;32mimport[0m [0mplotly[0m[0;34m.[0m[0mexpress[0m [0;32mas[0m [0mpx[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      7[0m [0;32mimport[0m [0mplotly[0m[0;34m.[0m[0mgraph_objects[0m [0;32mas[0m [0mgo[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      8[0m [0;34m[0m[0m
+
+[0;31mModuleNotFoundError[0m: No module named 'plotly.express'
+ModuleNotFoundError: No module named 'plotly.express'
 

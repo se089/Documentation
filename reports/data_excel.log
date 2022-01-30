@@ -17,79 +17,31 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# load data
-df_impact_total = pd.read_csv('Dashboard/fig1_environmental_impact_food.csv', delimiter=';')
-df_impact_steps = pd.read_csv('Dashboard/fig2_emissions-food-per-step.csv', delimiter=';')
-df_world = pd.read_csv('Dashboard/fig3_global_ghg_emissions.csv')
-df_impact_single = pd.read_csv('Dashboard/fig4_effect_of_different_foods.csv')
-df_diet = pd.read_csv('Dashboard/fig5_diets.csv')
+# Dump Pandas DataFrame to Excel sheet: XLS wird erstellt und in Verzeichnis geschrieben
+writer = pd.ExcelWriter('data_report.xlsx', engine='xlsxwriter')
+df_impact_total.to_excel(writer, sheet_name='Impact_foodproduction', startrow=1, index=False)
+df_impact_steps.to_excel(writer, sheet_name='GHG_emissions_per_step', startrow=1, index=False)
+df_world.to_excel(writer, sheet_name='Global_GHG_emissions', startrow=1, index=False)
+df_impact_single.to_excel(writer, sheet_name='Impact_single_food', startrow=1, index=False)
+df_diet.to_excel(writer, sheet_name='Impact_of_different_diets', startrow=1, index=False)
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_36420/3821448587.py[0m in [0;36m<module>[0;34m[0m
-[1;32m      1[0m [0;31m# load data[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m----> 2[0;31m [0mdf_impact_total[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0;34m'Dashboard/fig1_environmental_impact_food.csv'[0m[0;34m,[0m [0mdelimiter[0m[0;34m=[0m[0;34m';'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      3[0m [0mdf_impact_steps[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0;34m'Dashboard/fig2_emissions-food-per-step.csv'[0m[0;34m,[0m [0mdelimiter[0m[0;34m=[0m[0;34m';'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      4[0m [0mdf_world[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0;34m'Dashboard/fig3_global_ghg_emissions.csv'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      5[0m [0mdf_impact_single[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0;34m'Dashboard/fig4_effect_of_different_foods.csv'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_36770/3656409933.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m# Dump Pandas DataFrame to Excel sheet: XLS wird erstellt und in Verzeichnis geschrieben[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mwriter[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mExcelWriter[0m[0;34m([0m[0;34m'data_report.xlsx'[0m[0;34m,[0m [0mengine[0m[0;34m=[0m[0;34m'xlsxwriter'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0mdf_impact_total[0m[0;34m.[0m[0mto_excel[0m[0;34m([0m[0mwriter[0m[0;34m,[0m [0msheet_name[0m[0;34m=[0m[0;34m'Impact_foodproduction'[0m[0;34m,[0m [0mstartrow[0m[0;34m=[0m[0;36m1[0m[0;34m,[0m [0mindex[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0mdf_impact_steps[0m[0;34m.[0m[0mto_excel[0m[0;34m([0m[0mwriter[0m[0;34m,[0m [0msheet_name[0m[0;34m=[0m[0;34m'GHG_emissions_per_step'[0m[0;34m,[0m [0mstartrow[0m[0;34m=[0m[0;36m1[0m[0;34m,[0m [0mindex[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mdf_world[0m[0;34m.[0m[0mto_excel[0m[0;34m([0m[0mwriter[0m[0;34m,[0m [0msheet_name[0m[0;34m=[0m[0;34m'Global_GHG_emissions'[0m[0;34m,[0m [0mstartrow[0m[0;34m=[0m[0;36m1[0m[0;34m,[0m [0mindex[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/util/_decorators.py[0m in [0;36mwrapper[0;34m(*args, **kwargs)[0m
-[1;32m    309[0m                     [0mstacklevel[0m[0;34m=[0m[0mstacklevel[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    310[0m                 )
-[0;32m--> 311[0;31m             [0;32mreturn[0m [0mfunc[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    312[0m [0;34m[0m[0m
-[1;32m    313[0m         [0;32mreturn[0m [0mwrapper[0m[0;34m[0m[0;34m[0m[0m
+[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/excel/_xlsxwriter.py[0m in [0;36m__init__[0;34m(self, path, engine, date_format, datetime_format, mode, storage_options, if_sheet_exists, engine_kwargs, **kwargs)[0m
+[1;32m    182[0m     ):
+[1;32m    183[0m         [0;31m# Use the xlsxwriter module as the Excel writer.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 184[0;31m         [0;32mfrom[0m [0mxlsxwriter[0m [0;32mimport[0m [0mWorkbook[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    185[0m [0;34m[0m[0m
+[1;32m    186[0m         [0mengine_kwargs[0m [0;34m=[0m [0mcombine_kwargs[0m[0;34m([0m[0mengine_kwargs[0m[0;34m,[0m [0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py[0m in [0;36mread_csv[0;34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)[0m
-[1;32m    584[0m     [0mkwds[0m[0;34m.[0m[0mupdate[0m[0;34m([0m[0mkwds_defaults[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    585[0m [0;34m[0m[0m
-[0;32m--> 586[0;31m     [0;32mreturn[0m [0m_read[0m[0;34m([0m[0mfilepath_or_buffer[0m[0;34m,[0m [0mkwds[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    587[0m [0;34m[0m[0m
-[1;32m    588[0m [0;34m[0m[0m
-
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py[0m in [0;36m_read[0;34m(filepath_or_buffer, kwds)[0m
-[1;32m    480[0m [0;34m[0m[0m
-[1;32m    481[0m     [0;31m# Create the parser.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 482[0;31m     [0mparser[0m [0;34m=[0m [0mTextFileReader[0m[0;34m([0m[0mfilepath_or_buffer[0m[0;34m,[0m [0;34m**[0m[0mkwds[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    483[0m [0;34m[0m[0m
-[1;32m    484[0m     [0;32mif[0m [0mchunksize[0m [0;32mor[0m [0miterator[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py[0m in [0;36m__init__[0;34m(self, f, engine, **kwds)[0m
-[1;32m    809[0m             [0mself[0m[0;34m.[0m[0moptions[0m[0;34m[[0m[0;34m"has_index_names"[0m[0;34m][0m [0;34m=[0m [0mkwds[0m[0;34m[[0m[0;34m"has_index_names"[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
-[1;32m    810[0m [0;34m[0m[0m
-[0;32m--> 811[0;31m         [0mself[0m[0;34m.[0m[0m_engine[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0m_make_engine[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mengine[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    812[0m [0;34m[0m[0m
-[1;32m    813[0m     [0;32mdef[0m [0mclose[0m[0;34m([0m[0mself[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py[0m in [0;36m_make_engine[0;34m(self, engine)[0m
-[1;32m   1038[0m             )
-[1;32m   1039[0m         [0;31m# error: Too many arguments for "ParserBase"[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m-> 1040[0;31m         [0;32mreturn[0m [0mmapping[0m[0;34m[[0m[0mengine[0m[0;34m][0m[0;34m([0m[0mself[0m[0;34m.[0m[0mf[0m[0;34m,[0m [0;34m**[0m[0mself[0m[0;34m.[0m[0moptions[0m[0;34m)[0m  [0;31m# type: ignore[call-arg][0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m   1041[0m [0;34m[0m[0m
-[1;32m   1042[0m     [0;32mdef[0m [0m_failover_to_python[0m[0;34m([0m[0mself[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py[0m in [0;36m__init__[0;34m(self, src, **kwds)[0m
-[1;32m     49[0m [0;34m[0m[0m
-[1;32m     50[0m         [0;31m# open handles[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m---> 51[0;31m         [0mself[0m[0;34m.[0m[0m_open_handles[0m[0;34m([0m[0msrc[0m[0;34m,[0m [0mkwds[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m     52[0m         [0;32massert[0m [0mself[0m[0;34m.[0m[0mhandles[0m [0;32mis[0m [0;32mnot[0m [0;32mNone[0m[0;34m[0m[0;34m[0m[0m
-[1;32m     53[0m [0;34m[0m[0m
-
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py[0m in [0;36m_open_handles[0;34m(self, src, kwds)[0m
-[1;32m    227[0m             [0mmemory_map[0m[0;34m=[0m[0mkwds[0m[0;34m.[0m[0mget[0m[0;34m([0m[0;34m"memory_map"[0m[0;34m,[0m [0;32mFalse[0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    228[0m             [0mstorage_options[0m[0;34m=[0m[0mkwds[0m[0;34m.[0m[0mget[0m[0;34m([0m[0;34m"storage_options"[0m[0;34m,[0m [0;32mNone[0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 229[0;31m             [0merrors[0m[0;34m=[0m[0mkwds[0m[0;34m.[0m[0mget[0m[0;34m([0m[0;34m"encoding_errors"[0m[0;34m,[0m [0;34m"strict"[0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    230[0m         )
-[1;32m    231[0m [0;34m[0m[0m
-
-[0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/common.py[0m in [0;36mget_handle[0;34m(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)[0m
-[1;32m    705[0m                 [0mencoding[0m[0;34m=[0m[0mioargs[0m[0;34m.[0m[0mencoding[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    706[0m                 [0merrors[0m[0;34m=[0m[0merrors[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 707[0;31m                 [0mnewline[0m[0;34m=[0m[0;34m""[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    708[0m             )
-[1;32m    709[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-
-[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'Dashboard/fig1_environmental_impact_food.csv'
-FileNotFoundError: [Errno 2] No such file or directory: 'Dashboard/fig1_environmental_impact_food.csv'
+[0;31mModuleNotFoundError[0m: No module named 'xlsxwriter'
+ModuleNotFoundError: No module named 'xlsxwriter'
 
