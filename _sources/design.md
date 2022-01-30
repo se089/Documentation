@@ -16,7 +16,7 @@ Die erste Grafik zeigt, welchen Anteil die Lebensmittelindustrie an negativen Um
 ```{image} ../Report/fig_1_1.png
 :alt: Abbildung 1.1
 :class: mb-2
-:width: 700px
+:width: 500px
 :align: center
 ```
 
@@ -26,7 +26,7 @@ In der nächsten Grafik wird gezeigt, in welchem Produktionsschritt die Treibhau
 ```{image} ../Report/fig_1_2.png
 :alt: Abbildung 1.2
 :class: mb-2
-:width: 700px
+:width: 500px
 :align: center
 ```
 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styling &#8212; Data Storytelling - Dokumentation</title>
+    <title>Excel &#8212; Data Storytelling - Dokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Story" href="story.html" />
-    <link rel="prev" title="Preparation" href="report_pdf.html" />
+    <link rel="prev" title="Report" href="report_pdf.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -133,12 +133,12 @@
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="report_pdf.html">
-     Preparation
+     Report
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Styling
+     Excel
     </a>
    </li>
   </ul>
@@ -266,18 +266,25 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Styling
+   Excel
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-titles">
-     Add Titles
+    <a class="reference internal nav-link" href="#styling">
+     Styling
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#formatting-columns">
-     Formatting columns
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#add-titles">
+       Add Titles
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formatting-columns">
+       Formatting columns
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -297,7 +304,9 @@
         
               <div>
                 
-  <div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="excel">
+<h1>Excel<a class="headerlink" href="#excel" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -332,7 +341,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_36770</span><span class="o">/</span><span class="mf">3656409933.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_38078</span><span class="o">/</span><span class="mf">3656409933.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Dump Pandas DataFrame to Excel sheet: XLS wird erstellt und in Verzeichnis geschrieben</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="s1">&#39;data_report.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;xlsxwriter&#39;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">df_impact_total</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;Impact_foodproduction&#39;</span><span class="p">,</span> <span class="n">startrow</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -352,9 +361,9 @@
 </div>
 </div>
 <div class="section" id="styling">
-<h1>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h1>
+<h2>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="add-titles">
-<h2>Add Titles<a class="headerlink" href="#add-titles" title="Permalink to this headline">¶</a></h2>
+<h3>Add Titles<a class="headerlink" href="#add-titles" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Further manipulation: title for each sheet</span>
@@ -380,7 +389,7 @@
 </div>
 </div>
 <div class="section" id="formatting-columns">
-<h2>Formatting columns<a class="headerlink" href="#formatting-columns" title="Permalink to this headline">¶</a></h2>
+<h3>Formatting columns<a class="headerlink" href="#formatting-columns" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#thousand separator</span>
@@ -475,6 +484,7 @@
 </div>
 </div>
 </div>
+</div>
 <div class="tex2jax_ignore mathjax_ignore section" id="save-excel">
 <h1>Save Excel<a class="headerlink" href="#save-excel" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
@@ -521,7 +531,7 @@
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Preparation</p>
+                <p class="prevnext-title">Report</p>
             </div>
         </a>
     </div>

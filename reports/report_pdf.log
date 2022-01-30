@@ -31,7 +31,7 @@ import json
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_36433/3783352548.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_38084/3783352548.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      2[0m [0;32mimport[0m [0mnumpy[0m [0;32mas[0m [0mnp[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      3[0m [0;32mimport[0m [0mjinja2[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 4[0;31m [0;32mimport[0m [0mpdfkit[0m[0;34m[0m[0;34m[0m[0m

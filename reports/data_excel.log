@@ -28,7 +28,7 @@ df_diet.to_excel(writer, sheet_name='Impact_of_different_diets', startrow=1, ind
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_36770/3656409933.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_38078/3656409933.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      1[0m [0;31m# Dump Pandas DataFrame to Excel sheet: XLS wird erstellt und in Verzeichnis geschrieben[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 2[0;31m [0mwriter[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mExcelWriter[0m[0;34m([0m[0;34m'data_report.xlsx'[0m[0;34m,[0m [0mengine[0m[0;34m=[0m[0;34m'xlsxwriter'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      3[0m [0mdf_impact_total[0m[0;34m.[0m[0mto_excel[0m[0;34m([0m[0mwriter[0m[0;34m,[0m [0msheet_name[0m[0;34m=[0m[0;34m'Impact_foodproduction'[0m[0;34m,[0m [0mstartrow[0m[0;34m=[0m[0;36m1[0m[0;34m,[0m [0mindex[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
