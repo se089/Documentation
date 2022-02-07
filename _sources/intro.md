@@ -1,5 +1,5 @@
 # Projektdokumentation
-Sophia Engstler | Matr.Nr. 37161 | se089@hdm-stuttgart.de
+Sophia Engstler | Matr.Nr. 37163 | se089@hdm-stuttgart.de
 
 ## Aufgabenbeschreibung
 Die Aufgabenstellung war es, Personen mithilfe von Daten **von einem bestimmtem Thema zu überzeugen**. Dafür sollte ein interaktives Dashboard und ein statischer PDF-Report erstellt werden. Des Weiteren sollten die verwendeten Daten als Excel vorliegen. Der Aufbau sollte einer definierten Story folgen und die Grafiken sollten sich an den besprochenen Gestaltprinzipien orientieren. 
